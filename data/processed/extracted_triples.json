@@ -1,0 +1,2838 @@
+{
+  "entities": {
+    "person_alan_turing": {
+      "id": "person_alan_turing",
+      "type": "Person",
+      "name": "Alan Mathison Turing",
+      "name_zh": "艾伦·图灵",
+      "properties": {
+        "birth_date": "1912-06-23",
+        "death_date": "1954-06-07",
+        "nationality": "English",
+        "description": "英国数学家、计算机科学家、逻辑学家、密码分析家、哲学家和理论生物学家。",
+        "occupation": "mathematician, computer scientist, logician, cryptanalyst, philosopher, theoretical biologist",
+        "wikidata_id": ""
+      }
+    },
+    "place_london": {
+      "id": "place_london",
+      "type": "Place",
+      "name": "London",
+      "name_zh": "伦敦",
+      "properties": {
+        "country": "United Kingdom",
+        "place_type": "city",
+        "description": "英国首都，图灵出生地。",
+        "wikidata_id": ""
+      }
+    },
+    "institution_kings_college_cambridge": {
+      "id": "institution_kings_college_cambridge",
+      "type": "Institution",
+      "name": "King's College, Cambridge",
+      "name_zh": "剑桥大学国王学院",
+      "properties": {
+        "institution_type": "university college",
+        "location": "Cambridge, United Kingdom",
+        "founded_date": "",
+        "description": "图灵毕业于此。",
+        "wikidata_id": ""
+      }
+    },
+    "institution_princeton_university": {
+      "id": "institution_princeton_university",
+      "type": "Institution",
+      "name": "Princeton University",
+      "name_zh": "普林斯顿大学",
+      "properties": {
+        "institution_type": "university",
+        "location": "Princeton, United States",
+        "founded_date": "",
+        "description": "图灵在此获得博士学位。",
+        "wikidata_id": ""
+      }
+    },
+    "institution_government_code_and_cypher_school": {
+      "id": "institution_government_code_and_cypher_school",
+      "type": "Institution",
+      "name": "Government Code and Cypher School",
+      "name_zh": "政府密码学校",
+      "properties": {
+        "institution_type": "government agency",
+        "location": "Bletchley Park, United Kingdom",
+        "founded_date": "",
+        "description": "英国二战期间的密码破译中心。",
+        "wikidata_id": ""
+      }
+    },
+    "place_bletchley_park": {
+      "id": "place_bletchley_park",
+      "type": "Place",
+      "name": "Bletchley Park",
+      "name_zh": "布莱切利园",
+      "properties": {
+        "country": "United Kingdom",
+        "place_type": "historic site",
+        "description": "英国二战期间的密码破译中心所在地。",
+        "wikidata_id": ""
+      }
+    },
+    "event_world_war_ii": {
+      "id": "event_world_war_ii",
+      "type": "Event",
+      "name": "World War II",
+      "name_zh": "第二次世界大战",
+      "properties": {
+        "start_date": "1939-09-01",
+        "end_date": "1945-09-02",
+        "location": "global",
+        "description": "全球性战争，图灵参与密码破译工作。",
+        "wikidata_id": ""
+      }
+    },
+    "concept_turing_machine": {
+      "id": "concept_turing_machine",
+      "type": "Concept",
+      "name": "Turing machine",
+      "name_zh": "图灵机",
+      "properties": {
+        "field": "computer science",
+        "description": "通用计算机的模型，由图灵提出。",
+        "wikidata_id": ""
+      }
+    },
+    "concept_algorithm": {
+      "id": "concept_algorithm",
+      "type": "Concept",
+      "name": "algorithm",
+      "name_zh": "算法",
+      "properties": {
+        "field": "computer science",
+        "description": "计算步骤的序列，图灵对其进行了形式化。",
+        "wikidata_id": ""
+      }
+    },
+    "concept_computation": {
+      "id": "concept_computation",
+      "type": "Concept",
+      "name": "computation",
+      "name_zh": "计算",
+      "properties": {
+        "field": "computer science",
+        "description": "信息处理过程，图灵对其进行了形式化。",
+        "wikidata_id": ""
+      }
+    },
+    "institution_national_physical_laboratory": {
+      "id": "institution_national_physical_laboratory",
+      "type": "Institution",
+      "name": "National Physical Laboratory",
+      "name_zh": "国家物理实验室",
+      "properties": {
+        "institution_type": "research institute",
+        "location": "Teddington, United Kingdom",
+        "founded_date": "",
+        "description": "图灵战后在此工作，设计了自动计算引擎。",
+        "wikidata_id": ""
+      }
+    },
+    "concept_automatic_computing_engine": {
+      "id": "concept_automatic_computing_engine",
+      "type": "Concept",
+      "name": "Automatic Computing Engine",
+      "name_zh": "自动计算引擎",
+      "properties": {
+        "field": "computer science",
+        "description": "早期存储程序计算机设计之一，由图灵设计。",
+        "wikidata_id": ""
+      }
+    },
+    "institution_university_of_manchester": {
+      "id": "institution_university_of_manchester",
+      "type": "Institution",
+      "name": "University of Manchester",
+      "name_zh": "曼彻斯特大学",
+      "properties": {
+        "institution_type": "university",
+        "location": "Manchester, United Kingdom",
+        "founded_date": "",
+        "description": "图灵在此加入计算机器实验室。",
+        "wikidata_id": ""
+      }
+    },
+    "person_max_newman": {
+      "id": "person_max_newman",
+      "type": "Person",
+      "name": "Max Newman",
+      "name_zh": "马克斯·纽曼",
+      "properties": {
+        "birth_date": "",
+        "death_date": "",
+        "nationality": "",
+        "description": "计算机器实验室负责人。",
+        "occupation": "",
+        "wikidata_id": ""
+      }
+    },
+    "concept_morphogenesis": {
+      "id": "concept_morphogenesis",
+      "type": "Concept",
+      "name": "morphogenesis",
+      "name_zh": "形态发生",
+      "properties": {
+        "field": "biology",
+        "description": "生物形态发育过程，图灵研究其化学基础。",
+        "wikidata_id": ""
+      }
+    },
+    "concept_belousov_zhabotinsky_reaction": {
+      "id": "concept_belousov_zhabotinsky_reaction",
+      "type": "Concept",
+      "name": "Belousov–Zhabotinsky reaction",
+      "name_zh": "别洛乌索夫-扎博京斯基反应",
+      "properties": {
+        "field": "chemistry",
+        "description": "振荡化学反应，图灵预测了此类反应。",
+        "wikidata_id": ""
+      }
+    },
+    "event_prosecution_for_homosexual_acts": {
+      "id": "event_prosecution_for_homosexual_acts",
+      "type": "Event",
+      "name": "prosecution for homosexual acts",
+      "name_zh": "因同性恋行为被起诉",
+      "properties": {
+        "start_date": "1952",
+        "end_date": "",
+        "location": "United Kingdom",
+        "description": "图灵因同性恋行为被起诉。",
+        "wikidata_id": ""
+      }
+    },
+    "person_gordon_brown": {
+      "id": "person_gordon_brown",
+      "type": "Person",
+      "name": "Gordon Brown",
+      "name_zh": "戈登·布朗",
+      "properties": {
+        "birth_date": "",
+        "death_date": "",
+        "nationality": "British",
+        "description": "英国前首相，为图灵道歉。",
+        "occupation": "politician",
+        "wikidata_id": ""
+      }
+    },
+    "person_queen_elizabeth_ii": {
+      "id": "person_queen_elizabeth_ii",
+      "type": "Person",
+      "name": "Queen Elizabeth II",
+      "name_zh": "伊丽莎白二世女王",
+      "properties": {
+        "birth_date": "",
+        "death_date": "",
+        "nationality": "British",
+        "description": "英国女王，授予图灵赦免。",
+        "occupation": "monarch",
+        "wikidata_id": ""
+      }
+    },
+    "concept_alan_turing_law": {
+      "id": "concept_alan_turing_law",
+      "type": "Concept",
+      "name": "Alan Turing law",
+      "name_zh": "艾伦·图灵法",
+      "properties": {
+        "field": "law",
+        "description": "非正式术语，指英国2017年赦免同性恋定罪的法律。",
+        "wikidata_id": ""
+      }
+    },
+    "person_julius_mathison_turing": {
+      "id": "person_julius_mathison_turing",
+      "type": "Person",
+      "name": "Julius Mathison Turing",
+      "name_zh": "朱利叶斯·马西森·图灵",
+      "properties": {
+        "description": "艾伦·图灵的父亲，印度文职服务官员"
+      }
+    },
+    "person_john_robert_turing": {
+      "id": "person_john_robert_turing",
+      "type": "Person",
+      "name": "John Robert Turing",
+      "name_zh": "约翰·罗伯特·图灵",
+      "properties": {
+        "description": "艾伦·图灵的祖父，牧师"
+      }
+    },
+    "person_ethel_sara_turing": {
+      "id": "person_ethel_sara_turing",
+      "type": "Person",
+      "name": "Ethel Sara Turing",
+      "name_zh": "埃塞尔·萨拉·图灵",
+      "properties": {
+        "description": "艾伦·图灵的母亲"
+      }
+    },
+    "person_edward_waller_stoney": {
+      "id": "person_edward_waller_stoney",
+      "type": "Person",
+      "name": "Edward Waller Stoney",
+      "name_zh": "爱德华·沃勒·斯托尼",
+      "properties": {
+        "description": "艾伦·图灵的外祖父，马德拉斯铁路总工程师"
+      }
+    },
+    "person_john_ferrier_turing": {
+      "id": "person_john_ferrier_turing",
+      "type": "Person",
+      "name": "John Ferrier Turing",
+      "name_zh": "约翰·费里尔·图灵",
+      "properties": {
+        "description": "艾伦·图灵的哥哥"
+      }
+    },
+    "person_dermot_turing": {
+      "id": "person_dermot_turing",
+      "type": "Person",
+      "name": "Dermot Turing",
+      "name_zh": "德莫特·图灵",
+      "properties": {
+        "description": "艾伦·图灵的侄子，第12代图灵男爵"
+      }
+    },
+    "person_christopher_collan_morcom": {
+      "id": "person_christopher_collan_morcom",
+      "type": "Person",
+      "name": "Christopher Collan Morcom",
+      "name_zh": "克里斯托弗·科兰·莫科姆",
+      "properties": {
+        "birth_date": "1911-07-13",
+        "death_date": "1930-02-13",
+        "description": "艾伦·图灵在谢伯恩学校的朋友"
+      }
+    },
+    "place_maida_vale_london": {
+      "id": "place_maida_vale_london",
+      "type": "Place",
+      "name": "Maida Vale, London",
+      "name_zh": "伦敦梅达谷",
+      "properties": {
+        "country": "United Kingdom",
+        "place_type": "Neighborhood",
+        "description": "伦敦的一个地区，艾伦·图灵的出生地"
+      }
+    },
+    "place_chatrapur": {
+      "id": "place_chatrapur",
+      "type": "Place",
+      "name": "Chatrapur",
+      "name_zh": "查特拉普尔",
+      "properties": {
+        "country": "India",
+        "place_type": "Town",
+        "description": "印度奥里萨邦的一个城镇"
+      }
+    },
+    "place_odisha": {
+      "id": "place_odisha",
+      "type": "Place",
+      "name": "Odisha",
+      "name_zh": "奥里萨邦",
+      "properties": {
+        "country": "India",
+        "place_type": "State",
+        "description": "印度的一个邦"
+      }
+    },
+    "place_dublin": {
+      "id": "place_dublin",
+      "type": "Place",
+      "name": "Dublin",
+      "name_zh": "都柏林",
+      "properties": {
+        "country": "Ireland",
+        "place_type": "City",
+        "description": "爱尔兰首都"
+      }
+    },
+    "place_hastings": {
+      "id": "place_hastings",
+      "type": "Place",
+      "name": "Hastings",
+      "name_zh": "黑斯廷斯",
+      "properties": {
+        "country": "United Kingdom",
+        "place_type": "Town",
+        "description": "英国的一个城镇"
+      }
+    },
+    "place_guildford": {
+      "id": "place_guildford",
+      "type": "Place",
+      "name": "Guildford",
+      "name_zh": "吉尔福德",
+      "properties": {
+        "country": "United Kingdom",
+        "place_type": "Town",
+        "description": "英国的一个城镇"
+      }
+    },
+    "institution_indian_civil_service": {
+      "id": "institution_indian_civil_service",
+      "type": "Institution",
+      "name": "Indian Civil Service",
+      "name_zh": "印度文职服务",
+      "properties": {
+        "institution_type": "Government Agency",
+        "location": "India",
+        "description": "英国统治印度时期的行政机构"
+      }
+    },
+    "institution_sherborne_school": {
+      "id": "institution_sherborne_school",
+      "type": "Institution",
+      "name": "Sherborne School",
+      "name_zh": "谢伯恩学校",
+      "properties": {
+        "institution_type": "School",
+        "location": "Sherborne, Dorset",
+        "description": "英国的一所独立寄宿学校"
+      }
+    },
+    "institution_hazelhurst_preparatory_school": {
+      "id": "institution_hazelhurst_preparatory_school",
+      "type": "Institution",
+      "name": "Hazelhurst Preparatory School",
+      "name_zh": "黑泽尔赫斯特预备学校",
+      "properties": {
+        "institution_type": "School",
+        "location": "Frant, Sussex",
+        "description": "英国的一所预备学校"
+      }
+    },
+    "institution_st_michaels_school": {
+      "id": "institution_st_michaels_school",
+      "type": "Institution",
+      "name": "St Michael's School",
+      "name_zh": "圣迈克尔学校",
+      "properties": {
+        "institution_type": "School",
+        "location": "St Leonards-on-Sea",
+        "description": "英国的一所小学"
+      }
+    },
+    "publication_natural_wonders_every_child_should_know": {
+      "id": "publication_natural_wonders_every_child_should_know",
+      "type": "Publication",
+      "name": "Natural Wonders Every Child Should Know",
+      "name_zh": "每个孩子都应该知道的自然奇观",
+      "properties": {
+        "year": "1922",
+        "publication_type": "Book",
+        "description": "埃德温·坦尼·布鲁斯特所著书籍"
+      }
+    },
+    "event_1926_general_strike": {
+      "id": "event_1926_general_strike",
+      "type": "Event",
+      "name": "1926 General Strike",
+      "name_zh": "1926年大罢工",
+      "properties": {
+        "start_date": "1926-05-03",
+        "end_date": "1926-05-12",
+        "location": "United Kingdom",
+        "description": "英国的一次大规模罢工事件"
+      }
+    },
+    "person_ludwig_wittgenstein": {
+      "id": "person_ludwig_wittgenstein",
+      "type": "Person",
+      "name": "Ludwig Wittgenstein",
+      "name_zh": "路德维希·维特根斯坦",
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": "Austrian",
+        "description": "奥地利哲学家，专注于数学哲学和语言哲学。",
+        "occupation": "Philosopher",
+        "wikidata_id": null
+      }
+    },
+    "person_asa_briggs": {
+      "id": "person_asa_briggs",
+      "type": "Person",
+      "name": "Asa Briggs",
+      "name_zh": "阿萨·布里格斯",
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": "British",
+        "description": "英国历史学家，二战期间担任密码破译员。",
+        "occupation": "Historian, Codebreaker",
+        "wikidata_id": null
+      }
+    },
+    "person_dilly_knox": {
+      "id": "person_dilly_knox",
+      "type": "Person",
+      "name": "Dilly Knox",
+      "name_zh": "迪利·诺克斯",
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": "British",
+        "description": "英国高级密码破译员，在GC&CS工作。",
+        "occupation": "Cryptanalyst",
+        "wikidata_id": null
+      }
+    },
+    "person_jack_good": {
+      "id": "person_jack_good",
+      "type": "Person",
+      "name": "Jack Good",
+      "name_zh": "杰克·古德",
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": "British",
+        "description": "英国密码学家，与图灵在布莱切利公园合作。",
+        "occupation": "Cryptanalyst",
+        "wikidata_id": null
+      }
+    },
+    "person_ronald_lewin": {
+      "id": "person_ronald_lewin",
+      "type": "Person",
+      "name": "Ronald Lewin",
+      "name_zh": "罗纳德·莱温",
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": "British",
+        "description": "英国历史学家，研究二战密码学。",
+        "occupation": "Historian",
+        "wikidata_id": null
+      }
+    },
+    "person_richard": {
+      "id": "person_richard",
+      "type": "Person",
+      "name": "Richard",
+      "name_zh": "理查德",
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": "British",
+        "description": "GCHQ数学家，匿名评论图灵的论文。",
+        "occupation": "Mathematician",
+        "wikidata_id": null
+      }
+    },
+    "institution_cambridge": {
+      "id": "institution_cambridge",
+      "type": "Institution",
+      "name": "Cambridge",
+      "name_zh": "剑桥大学",
+      "properties": {
+        "institution_type": "University",
+        "location": "Cambridge, UK",
+        "founded_date": null,
+        "description": "英国著名大学，图灵曾在此学习和工作。",
+        "wikidata_id": null
+      }
+    },
+    "institution_bletchley_park": {
+      "id": "institution_bletchley_park",
+      "type": "Institution",
+      "name": "Bletchley Park",
+      "name_zh": "布莱切利公园",
+      "properties": {
+        "institution_type": "Government Facility",
+        "location": "Bletchley, UK",
+        "founded_date": null,
+        "description": "二战期间英国密码破译中心，GC&CS的所在地。",
+        "wikidata_id": null
+      }
+    },
+    "institution_gc_cs": {
+      "id": "institution_gc_cs",
+      "type": "Institution",
+      "name": "Government Code and Cypher School",
+      "name_zh": "政府密码学校",
+      "properties": {
+        "institution_type": "Government Agency",
+        "location": "UK",
+        "founded_date": null,
+        "description": "英国密码破译组织，后发展为GCHQ。",
+        "wikidata_id": null
+      }
+    },
+    "institution_gchq": {
+      "id": "institution_gchq",
+      "type": "Institution",
+      "name": "GCHQ",
+      "name_zh": "政府通信总部",
+      "properties": {
+        "institution_type": "Government Agency",
+        "location": "UK",
+        "founded_date": null,
+        "description": "英国信号情报机构，GC&CS的后继组织。",
+        "wikidata_id": null
+      }
+    },
+    "institution_polish_cipher_bureau": {
+      "id": "institution_polish_cipher_bureau",
+      "type": "Institution",
+      "name": "Polish Cipher Bureau",
+      "name_zh": "波兰密码局",
+      "properties": {
+        "institution_type": "Government Agency",
+        "location": "Poland",
+        "founded_date": null,
+        "description": "波兰密码破译机构，在二战前提供恩尼格玛机信息。",
+        "wikidata_id": null
+      }
+    },
+    "institution_hanslope_park": {
+      "id": "institution_hanslope_park",
+      "type": "Institution",
+      "name": "Hanslope Park",
+      "name_zh": "汉斯洛普公园",
+      "properties": {
+        "institution_type": "Government Facility",
+        "location": "Hanslope, UK",
+        "founded_date": null,
+        "description": "英国政府设施，图灵在此开发语音扰频器。",
+        "wikidata_id": null
+      }
+    },
+    "publication_the_applications_of_probability_to_cryptography": {
+      "id": "publication_the_applications_of_probability_to_cryptography",
+      "type": "Publication",
+      "name": "The Applications of Probability to Cryptography",
+      "name_zh": "概率在密码学中的应用",
+      "properties": {
+        "year": null,
+        "publication_type": "Paper",
+        "abstract": null,
+        "description": "图灵撰写的论文，讨论密码学中的数学方法。",
+        "wikidata_id": null
+      }
+    },
+    "publication_paper_on_statistics_of_repetitions": {
+      "id": "publication_paper_on_statistics_of_repetitions",
+      "type": "Publication",
+      "name": "Paper on Statistics of Repetitions",
+      "name_zh": "重复统计论文",
+      "properties": {
+        "year": null,
+        "publication_type": "Paper",
+        "abstract": null,
+        "description": "图灵撰写的论文，涉及密码学中的统计技术。",
+        "wikidata_id": null
+      }
+    },
+    "concept_formalism": {
+      "id": "concept_formalism",
+      "type": "Concept",
+      "name": "Formalism",
+      "name_zh": "形式主义",
+      "properties": {
+        "field": "Mathematics",
+        "description": "数学哲学中的一种观点，强调数学的形式系统。",
+        "wikidata_id": null
+      }
+    },
+    "concept_cryptanalysis": {
+      "id": "concept_cryptanalysis",
+      "type": "Concept",
+      "name": "Cryptanalysis",
+      "name_zh": "密码分析",
+      "properties": {
+        "field": "Cryptography",
+        "description": "分析和破解密码系统的过程。",
+        "wikidata_id": null
+      }
+    },
+    "concept_enigma_cipher_machine": {
+      "id": "concept_enigma_cipher_machine",
+      "type": "Concept",
+      "name": "Enigma cipher machine",
+      "name_zh": "恩尼格玛密码机",
+      "properties": {
+        "field": "Cryptography",
+        "description": "纳粹德国使用的加密设备，二战期间被破译。",
+        "wikidata_id": null
+      }
+    },
+    "concept_bombe": {
+      "id": "concept_bombe",
+      "type": "Concept",
+      "name": "Bombe",
+      "name_zh": "炸弹机",
+      "properties": {
+        "field": "Cryptography",
+        "description": "用于破译恩尼格玛机的机电设备，图灵改进设计。",
+        "wikidata_id": null
+      }
+    },
+    "concept_banburismus": {
+      "id": "concept_banburismus",
+      "type": "Concept",
+      "name": "Banburismus",
+      "name_zh": "班伯里统计法",
+      "properties": {
+        "field": "Cryptography",
+        "description": "图灵开发的统计程序，优化炸弹机的使用效率。",
+        "wikidata_id": null
+      }
+    },
+    "concept_turingery": {
+      "id": "concept_turingery",
+      "type": "Concept",
+      "name": "Turingery",
+      "name_zh": "图灵法",
+      "properties": {
+        "field": "Cryptography",
+        "description": "图灵开发的程序，用于确定洛伦兹密码机的轮子设置。",
+        "wikidata_id": null
+      }
+    },
+    "concept_lorenz_sz_40_42": {
+      "id": "concept_lorenz_sz_40_42",
+      "type": "Concept",
+      "name": "Lorenz SZ 40/42",
+      "name_zh": "洛伦兹SZ 40/42密码机",
+      "properties": {
+        "field": "Cryptography",
+        "description": "德国使用的密码机，代号Tunny，图灵参与破译。",
+        "wikidata_id": null
+      }
+    },
+    "concept_delilah": {
+      "id": "concept_delilah",
+      "type": "Concept",
+      "name": "Delilah",
+      "name_zh": "黛利拉",
+      "properties": {
+        "field": "Cryptography",
+        "description": "便携式安全语音扰频器，图灵在二战末期开发。",
+        "wikidata_id": null
+      }
+    },
+    "event_second_world_war": {
+      "id": "event_second_world_war",
+      "type": "Event",
+      "name": "Second World War",
+      "name_zh": "第二次世界大战",
+      "properties": {
+        "start_date": "1939-09-01",
+        "end_date": "1945-09-02",
+        "location": "Global",
+        "description": "全球性战争，涉及多个国家，密码学在其中起关键作用。",
+        "wikidata_id": null
+      }
+    },
+    "event_july_1939_meeting_near_warsaw": {
+      "id": "event_july_1939_meeting_near_warsaw",
+      "type": "Event",
+      "name": "July 1939 meeting near Warsaw",
+      "name_zh": "1939年7月华沙附近会议",
+      "properties": {
+        "start_date": "1939-07",
+        "end_date": null,
+        "location": "Warsaw, Poland",
+        "description": "波兰密码局向英法提供恩尼格玛机信息的会议。",
+        "wikidata_id": null
+      }
+    },
+    "place_uk": {
+      "id": "place_uk",
+      "type": "Place",
+      "name": "United Kingdom",
+      "name_zh": "英国",
+      "properties": {
+        "country": "UK",
+        "place_type": "Country",
+        "description": "欧洲国家，图灵的国籍和主要工作地。",
+        "wikidata_id": null
+      }
+    },
+    "place_germany": {
+      "id": "place_germany",
+      "type": "Place",
+      "name": "Germany",
+      "name_zh": "德国",
+      "properties": {
+        "country": "Germany",
+        "place_type": "Country",
+        "description": "欧洲国家，二战期间使用恩尼格玛机。",
+        "wikidata_id": null
+      }
+    },
+    "place_poland": {
+      "id": "place_poland",
+      "type": "Place",
+      "name": "Poland",
+      "name_zh": "波兰",
+      "properties": {
+        "country": "Poland",
+        "place_type": "Country",
+        "description": "欧洲国家，密码局在二战前提供关键密码信息。",
+        "wikidata_id": null
+      }
+    },
+    "award_official_secrets_act": {
+      "id": "award_official_secrets_act",
+      "type": "Award",
+      "name": "Official Secrets Act",
+      "name_zh": "官方机密法",
+      "properties": {
+        "year": null,
+        "awarded_by": "UK Government",
+        "description": "英国法律，要求签署者保密政府信息，图灵在布莱切利公园签署。",
+        "wikidata_id": null
+      }
+    },
+    "field_mathematics": {
+      "id": "field_mathematics",
+      "type": "Field",
+      "name": "Mathematics",
+      "name_zh": "数学",
+      "properties": {
+        "description": "研究数量、结构、空间和变化的学科，图灵的核心领域。",
+        "wikidata_id": null
+      }
+    },
+    "field_cryptography": {
+      "id": "field_cryptography",
+      "type": "Field",
+      "name": "Cryptography",
+      "name_zh": "密码学",
+      "properties": {
+        "description": "涉及加密和解密信息的学科，图灵在二战中做出重大贡献。",
+        "wikidata_id": null
+      }
+    },
+    "person_joan_clarke": {
+      "id": "person_joan_clarke",
+      "type": "Person",
+      "name": "Joan Clarke",
+      "name_zh": null,
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": "British",
+        "description": "Mathematician and cryptanalyst, colleague of Turing.",
+        "occupation": "mathematician, cryptanalyst",
+        "wikidata_id": null
+      }
+    },
+    "concept_round_the_house_chess": {
+      "id": "concept_round_the_house_chess",
+      "type": "Concept",
+      "name": "round-the-house chess",
+      "name_zh": null,
+      "properties": {
+        "field": "sports, games",
+        "description": "Hybrid chess sport invented by Turing.",
+        "wikidata_id": null
+      }
+    },
+    "person_arnold_murray": {
+      "id": "person_arnold_murray",
+      "type": "Person",
+      "name": "Arnold Murray",
+      "name_zh": null,
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": "British",
+        "description": "Unemployed man involved in Turing's conviction.",
+        "occupation": "unemployed",
+        "wikidata_id": null
+      }
+    },
+    "place_manchester": {
+      "id": "place_manchester",
+      "type": "Place",
+      "name": "Manchester",
+      "name_zh": null,
+      "properties": {
+        "country": "United Kingdom",
+        "place_type": "city",
+        "description": "City where Turing met Murray.",
+        "wikidata_id": null
+      }
+    },
+    "place_wilmslow": {
+      "id": "place_wilmslow",
+      "type": "Place",
+      "name": "Wilmslow",
+      "name_zh": "威尔姆斯洛",
+      "properties": {
+        "country": "United Kingdom",
+        "place_type": "town",
+        "description": "Location of Turing's house.",
+        "wikidata_id": null
+      }
+    },
+    "event_regina_v_turing_and_murray": {
+      "id": "event_regina_v_turing_and_murray",
+      "type": "Event",
+      "name": "Regina v. Turing and Murray",
+      "name_zh": null,
+      "properties": {
+        "start_date": "1952-03-31",
+        "end_date": null,
+        "location": "Knutsford",
+        "description": "Trial for gross indecency involving Turing and Murray.",
+        "wikidata_id": null
+      }
+    },
+    "place_knutsford": {
+      "id": "place_knutsford",
+      "type": "Place",
+      "name": "Knutsford",
+      "name_zh": null,
+      "properties": {
+        "country": "United Kingdom",
+        "place_type": "town",
+        "description": "Location of the trial.",
+        "wikidata_id": null
+      }
+    },
+    "person_guy_burgess": {
+      "id": "person_guy_burgess",
+      "type": "Person",
+      "name": "Guy Burgess",
+      "name_zh": null,
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": "British",
+        "description": "Defected to the Soviet Union in 1951.",
+        "occupation": "diplomat, spy",
+        "wikidata_id": null
+      }
+    },
+    "person_donald_maclean": {
+      "id": "person_donald_maclean",
+      "type": "Person",
+      "name": "Donald Maclean",
+      "name_zh": null,
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": "British",
+        "description": "Defected to the Soviet Union in 1951.",
+        "occupation": "diplomat, spy",
+        "wikidata_id": null
+      }
+    },
+    "place_norway": {
+      "id": "place_norway",
+      "type": "Place",
+      "name": "Norway",
+      "name_zh": null,
+      "properties": {
+        "country": "Norway",
+        "place_type": "country",
+        "description": "Country visited by Turing in 1952.",
+        "wikidata_id": null
+      }
+    },
+    "person_kjell_carlson": {
+      "id": "person_kjell_carlson",
+      "type": "Person",
+      "name": "Kjell Carlson",
+      "name_zh": null,
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": "Norwegian",
+        "description": "Man Turing met in Norway.",
+        "occupation": null,
+        "wikidata_id": null
+      }
+    },
+    "person_john_turing": {
+      "id": "person_john_turing",
+      "type": "Person",
+      "name": "John Turing",
+      "name_zh": "约翰·图灵",
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": "British",
+        "description": "艾伦·图灵的兄弟",
+        "occupation": null,
+        "wikidata_id": null
+      }
+    },
+    "person_franz_greenbaum": {
+      "id": "person_franz_greenbaum",
+      "type": "Person",
+      "name": "Franz Greenbaum",
+      "name_zh": "弗朗茨·格林鲍姆",
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": null,
+        "description": "提供建议的人",
+        "occupation": null,
+        "wikidata_id": null
+      }
+    },
+    "place_woking_crematorium": {
+      "id": "place_woking_crematorium",
+      "type": "Place",
+      "name": "Woking Crematorium",
+      "name_zh": "沃金火葬场",
+      "properties": {
+        "country": "United Kingdom",
+        "place_type": "Crematorium",
+        "description": "位于英格兰萨里郡沃金的火葬场",
+        "wikidata_id": null
+      }
+    },
+    "person_lyn_newman": {
+      "id": "person_lyn_newman",
+      "type": "Person",
+      "name": "Lyn Newman",
+      "name_zh": "林恩·纽曼",
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": null,
+        "description": "参加葬礼的人",
+        "occupation": null,
+        "wikidata_id": null
+      }
+    },
+    "person_jack_copeland": {
+      "id": "person_jack_copeland",
+      "type": "Person",
+      "name": "Jack Copeland",
+      "name_zh": "杰克·科普兰",
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": null,
+        "description": "哲学家，质疑图灵死因",
+        "occupation": "Philosopher",
+        "wikidata_id": null
+      }
+    },
+    "person_andrew_hodges": {
+      "id": "person_andrew_hodges",
+      "type": "Person",
+      "name": "Andrew Hodges",
+      "name_zh": "安德鲁·霍奇斯",
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": "British",
+        "description": "艾伦·图灵的传记作者",
+        "occupation": "Biographer",
+        "wikidata_id": null
+      }
+    },
+    "person_john_w_dawson_jr": {
+      "id": "person_john_w_dawson_jr",
+      "type": "Person",
+      "name": "John W. Dawson Jr.",
+      "name_zh": "约翰·W·道森",
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": null,
+        "description": "评论霍奇斯书籍的人",
+        "occupation": null,
+        "wikidata_id": null
+      }
+    },
+    "person_david_leavitt": {
+      "id": "person_david_leavitt",
+      "type": "Person",
+      "name": "David Leavitt",
+      "name_zh": "大卫·莱维特",
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": null,
+        "description": "艾伦·图灵的传记作者",
+        "occupation": "Biographer",
+        "wikidata_id": null
+      }
+    },
+    "publication_snow_white_and_the_seven_dwarfs": {
+      "id": "publication_snow_white_and_the_seven_dwarfs",
+      "type": "Publication",
+      "name": "Snow White and the Seven Dwarfs",
+      "name_zh": "白雪公主和七个小矮人",
+      "properties": {
+        "year": "1937",
+        "publication_type": "Film",
+        "abstract": null,
+        "description": "沃尔特·迪士尼制作的动画电影",
+        "wikidata_id": null
+      }
+    },
+    "event_death_of_alan_turing": {
+      "id": "event_death_of_alan_turing",
+      "type": "Event",
+      "name": "Death of Alan Turing",
+      "name_zh": "艾伦·图灵之死",
+      "properties": {
+        "start_date": "1954-06-07",
+        "end_date": "1954-06-07",
+        "location": "Wilmslow",
+        "description": "艾伦·图灵去世的事件",
+        "wikidata_id": null
+      }
+    },
+    "event_inquest": {
+      "id": "event_inquest",
+      "type": "Event",
+      "name": "Inquest",
+      "name_zh": "死因调查",
+      "properties": {
+        "start_date": "1954-06-09",
+        "end_date": "1954-06-09",
+        "location": null,
+        "description": "对艾伦·图灵死因的调查",
+        "wikidata_id": null
+      }
+    },
+    "event_cremation": {
+      "id": "event_cremation",
+      "type": "Event",
+      "name": "Cremation",
+      "name_zh": "火葬",
+      "properties": {
+        "start_date": "1954-06-12",
+        "end_date": "1954-06-12",
+        "location": "Woking Crematorium",
+        "description": "艾伦·图灵的火葬仪式",
+        "wikidata_id": null
+      }
+    },
+    "concept_cyanide_poisoning": {
+      "id": "concept_cyanide_poisoning",
+      "type": "Concept",
+      "name": "Cyanide Poisoning",
+      "name_zh": "氰化物中毒",
+      "properties": {
+        "field": "Medicine",
+        "description": "由氰化物引起的致命中毒",
+        "wikidata_id": null
+      }
+    },
+    "concept_suicide": {
+      "id": "concept_suicide",
+      "type": "Concept",
+      "name": "Suicide",
+      "name_zh": "自杀",
+      "properties": {
+        "field": "Psychology",
+        "description": "故意结束自己生命的行为",
+        "wikidata_id": null
+      }
+    },
+    "concept_electroplating": {
+      "id": "concept_electroplating",
+      "type": "Concept",
+      "name": "Electroplating",
+      "name_zh": "电镀",
+      "properties": {
+        "field": "Chemistry",
+        "description": "用电解方法在物体表面镀金属",
+        "wikidata_id": null
+      }
+    },
+    "concept_fortune_telling": {
+      "id": "concept_fortune_telling",
+      "type": "Concept",
+      "name": "Fortune-telling",
+      "name_zh": "算命",
+      "properties": {
+        "field": "Occult",
+        "description": "预测未来或解释命运的行为",
+        "wikidata_id": null
+      }
+    },
+    "field_cold_war": {
+      "id": "field_cold_war",
+      "type": "Field",
+      "name": "Cold War",
+      "name_zh": "冷战",
+      "properties": {
+        "description": "二战后美苏之间的政治军事对抗时期",
+        "wikidata_id": null
+      }
+    },
+    "person_john_graham_cumming": {
+      "id": "person_john_graham_cumming",
+      "type": "Person",
+      "name": "John Graham-Cumming",
+      "name_zh": null,
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": "British",
+        "description": "英国程序员，发起为图灵道歉的请愿。",
+        "occupation": "Programmer",
+        "wikidata_id": null
+      }
+    },
+    "person_william_jones": {
+      "id": "person_william_jones",
+      "type": "Person",
+      "name": "William Jones",
+      "name_zh": null,
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": "British",
+        "description": "与John Leech共同发起为图灵赦免的请愿。",
+        "occupation": null,
+        "wikidata_id": null
+      }
+    },
+    "person_john_leech": {
+      "id": "person_john_leech",
+      "type": "Person",
+      "name": "John Leech",
+      "name_zh": null,
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": "British",
+        "description": "英国议员，推动图灵赦免法案。",
+        "occupation": "Politician",
+        "wikidata_id": null
+      }
+    },
+    "person_lord_mcnally": {
+      "id": "person_lord_mcnally",
+      "type": "Person",
+      "name": "Lord McNally",
+      "name_zh": null,
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": "British",
+        "description": "英国司法部长，曾反对图灵赦免。",
+        "occupation": "Politician",
+        "wikidata_id": null
+      }
+    },
+    "person_stephen_hawking": {
+      "id": "person_stephen_hawking",
+      "type": "Person",
+      "name": "Stephen Hawking",
+      "name_zh": "斯蒂芬·霍金",
+      "properties": {
+        "birth_date": "1942-01-08",
+        "death_date": "2018-03-14",
+        "nationality": "British",
+        "description": "英国物理学家，支持图灵赦免。",
+        "occupation": "Physicist",
+        "wikidata_id": "Q177"
+      }
+    },
+    "person_lord_rees": {
+      "id": "person_lord_rees",
+      "type": "Person",
+      "name": "Lord Rees",
+      "name_zh": null,
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": "British",
+        "description": "英国天文学家，支持图灵赦免。",
+        "occupation": "Astronomer",
+        "wikidata_id": null
+      }
+    },
+    "person_sir_paul_nurse": {
+      "id": "person_sir_paul_nurse",
+      "type": "Person",
+      "name": "Sir Paul Nurse",
+      "name_zh": null,
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": "British",
+        "description": "英国生物学家，皇家学会主席，支持图灵赦免。",
+        "occupation": "Biologist",
+        "wikidata_id": null
+      }
+    },
+    "person_lady_trumpington": {
+      "id": "person_lady_trumpington",
+      "type": "Person",
+      "name": "Lady Trumpington",
+      "name_zh": null,
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": "British",
+        "description": "二战期间为图灵工作，支持赦免。",
+        "occupation": null,
+        "wikidata_id": null
+      }
+    },
+    "person_lord_sharkey": {
+      "id": "person_lord_sharkey",
+      "type": "Person",
+      "name": "Lord Sharkey",
+      "name_zh": null,
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": "British",
+        "description": "图灵赦免法案的发起人。",
+        "occupation": "Politician",
+        "wikidata_id": null
+      }
+    },
+    "person_david_cameron": {
+      "id": "person_david_cameron",
+      "type": "Person",
+      "name": "David Cameron",
+      "name_zh": "戴维·卡梅伦",
+      "properties": {
+        "birth_date": "1966-10-09",
+        "death_date": null,
+        "nationality": "British",
+        "description": "英国前首相，被呼吁支持图灵赦免。",
+        "occupation": "Politician",
+        "wikidata_id": "Q19276"
+      }
+    },
+    "person_christopher_chope": {
+      "id": "person_christopher_chope",
+      "type": "Person",
+      "name": "Christopher Chope",
+      "name_zh": null,
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": "British",
+        "description": "英国保守党议员，反对图灵赦免法案。",
+        "occupation": "Politician",
+        "wikidata_id": null
+      }
+    },
+    "institution_british_government": {
+      "id": "institution_british_government",
+      "type": "Institution",
+      "name": "British Government",
+      "name_zh": "英国政府",
+      "properties": {
+        "institution_type": "Government",
+        "location": "United Kingdom",
+        "founded_date": null,
+        "description": "英国中央政府，涉及图灵道歉和赦免。",
+        "wikidata_id": null
+      }
+    },
+    "institution_parliament": {
+      "id": "institution_parliament",
+      "type": "Institution",
+      "name": "Parliament",
+      "name_zh": "议会",
+      "properties": {
+        "institution_type": "Legislature",
+        "location": "United Kingdom",
+        "founded_date": null,
+        "description": "英国立法机构，处理图灵赦免法案。",
+        "wikidata_id": null
+      }
+    },
+    "institution_house_of_lords": {
+      "id": "institution_house_of_lords",
+      "type": "Institution",
+      "name": "House of Lords",
+      "name_zh": "上议院",
+      "properties": {
+        "institution_type": "Legislature",
+        "location": "United Kingdom",
+        "founded_date": null,
+        "description": "英国议会上院，审议图灵赦免法案。",
+        "wikidata_id": null
+      }
+    },
+    "institution_house_of_commons": {
+      "id": "institution_house_of_commons",
+      "type": "Institution",
+      "name": "House of Commons",
+      "name_zh": "下议院",
+      "properties": {
+        "institution_type": "Legislature",
+        "location": "United Kingdom",
+        "founded_date": null,
+        "description": "英国议会下院，审议图灵赦免法案。",
+        "wikidata_id": null
+      }
+    },
+    "institution_royal_society": {
+      "id": "institution_royal_society",
+      "type": "Institution",
+      "name": "Royal Society",
+      "name_zh": "皇家学会",
+      "properties": {
+        "institution_type": "Scientific Society",
+        "location": "United Kingdom",
+        "founded_date": "1660-11-28",
+        "description": "英国科学学会，主席支持图灵赦免。",
+        "wikidata_id": "Q123885"
+      }
+    },
+    "event_turing_prosecution": {
+      "id": "event_turing_prosecution",
+      "type": "Event",
+      "name": "Turing's Prosecution",
+      "name_zh": "图灵起诉",
+      "properties": {
+        "start_date": "1952-03-31",
+        "end_date": null,
+        "location": "United Kingdom",
+        "description": "图灵因同性恋被起诉的事件。",
+        "wikidata_id": null
+      }
+    },
+    "event_government_apology": {
+      "id": "event_government_apology",
+      "type": "Event",
+      "name": "Government Apology",
+      "name_zh": "政府道歉",
+      "properties": {
+        "start_date": "2009-09-10",
+        "end_date": null,
+        "location": "United Kingdom",
+        "description": "英国政府为图灵道歉的事件。",
+        "wikidata_id": null
+      }
+    },
+    "person_b_jack_copeland": {
+      "id": "person_b_jack_copeland",
+      "type": "Person",
+      "name": "B. Jack Copeland",
+      "name_zh": null,
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": null,
+        "description": "学者，编辑关于图灵的著作。",
+        "occupation": "Scholar, Editor",
+        "wikidata_id": null
+      }
+    },
+    "person_edward_n_zalta": {
+      "id": "person_edward_n_zalta",
+      "type": "Person",
+      "name": "Edward N. Zalta",
+      "name_zh": null,
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": null,
+        "description": "哲学家，编辑斯坦福哲学百科全书。",
+        "occupation": "Philosopher, Editor",
+        "wikidata_id": null
+      }
+    },
+    "person_paul_gray": {
+      "id": "person_paul_gray",
+      "type": "Person",
+      "name": "Paul Gray",
+      "name_zh": null,
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": null,
+        "description": "记者，为《时代》杂志撰稿。",
+        "occupation": "Journalist",
+        "wikidata_id": null
+      }
+    },
+    "person_h_o_connell": {
+      "id": "person_h_o_connell",
+      "type": "Person",
+      "name": "H. O'Connell",
+      "name_zh": null,
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": null,
+        "description": "研究人员，研究图灵的健康状况。",
+        "occupation": "Researcher",
+        "wikidata_id": null
+      }
+    },
+    "person_m_fitzgerald": {
+      "id": "person_m_fitzgerald",
+      "type": "Person",
+      "name": "M. Fitzgerald",
+      "name_zh": null,
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": null,
+        "description": "研究人员，研究图灵的健康状况。",
+        "occupation": "Researcher",
+        "wikidata_id": null
+      }
+    },
+    "person_john_j_o_connor": {
+      "id": "person_john_j_o_connor",
+      "type": "Person",
+      "name": "John J. O'Connor",
+      "name_zh": null,
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": null,
+        "description": "学者，参与数学史档案工作。",
+        "occupation": "Scholar",
+        "wikidata_id": null
+      }
+    },
+    "person_edmund_f_robertson": {
+      "id": "person_edmund_f_robertson",
+      "type": "Person",
+      "name": "Edmund F. Robertson",
+      "name_zh": null,
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": null,
+        "description": "学者，参与数学史档案工作。",
+        "occupation": "Scholar",
+        "wikidata_id": null
+      }
+    },
+    "person_jon_agar": {
+      "id": "person_jon_agar",
+      "type": "Person",
+      "name": "Jon Agar",
+      "name_zh": null,
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": null,
+        "description": "历史学家，撰写关于图灵和计算机的书籍。",
+        "occupation": "Historian",
+        "wikidata_id": null
+      }
+    },
+    "person_charles_babbage": {
+      "id": "person_charles_babbage",
+      "type": "Person",
+      "name": "Charles Babbage",
+      "name_zh": "查尔斯·巴贝奇",
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": "British",
+        "description": "英国数学家，计算机先驱。",
+        "occupation": "Mathematician, Inventor",
+        "wikidata_id": null
+      }
+    },
+    "person_martin_campbell_kelly": {
+      "id": "person_martin_campbell_kelly",
+      "type": "Person",
+      "name": "Martin Campbell-Kelly",
+      "name_zh": null,
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": null,
+        "description": "学者，编辑和撰写计算机历史书籍。",
+        "occupation": "Scholar, Editor",
+        "wikidata_id": null
+      }
+    },
+    "person_james_beniger": {
+      "id": "person_james_beniger",
+      "type": "Person",
+      "name": "James Beniger",
+      "name_zh": null,
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": null,
+        "description": "学者，研究信息社会起源。",
+        "occupation": "Scholar",
+        "wikidata_id": null
+      }
+    },
+    "person_chris_bernhardt": {
+      "id": "person_chris_bernhardt",
+      "type": "Person",
+      "name": "Chris Bernhardt",
+      "name_zh": null,
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": null,
+        "description": "学者，撰写关于图灵和计算机科学的书籍。",
+        "occupation": "Scholar",
+        "wikidata_id": null
+      }
+    },
+    "person_david_bodanis": {
+      "id": "person_david_bodanis",
+      "type": "Person",
+      "name": "David Bodanis",
+      "name_zh": null,
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": null,
+        "description": "作家，撰写科学和历史书籍。",
+        "occupation": "Writer",
+        "wikidata_id": null
+      }
+    },
+    "person_herbert_bruderer": {
+      "id": "person_herbert_bruderer",
+      "type": "Person",
+      "name": "Herbert Bruderer",
+      "name_zh": null,
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": null,
+        "description": "学者，研究计算机历史。",
+        "occupation": "Scholar",
+        "wikidata_id": null
+      }
+    },
+    "person_william_aspray": {
+      "id": "person_william_aspray",
+      "type": "Person",
+      "name": "William Aspray",
+      "name_zh": null,
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": null,
+        "description": "学者，合著计算机历史书籍。",
+        "occupation": "Scholar",
+        "wikidata_id": null
+      }
+    },
+    "person_paul_e_ceruzzi": {
+      "id": "person_paul_e_ceruzzi",
+      "type": "Person",
+      "name": "Paul E. Ceruzzi",
+      "name_zh": null,
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": null,
+        "description": "历史学家，撰写现代计算历史。",
+        "occupation": "Historian",
+        "wikidata_id": null
+      }
+    },
+    "person_alfred_chandler": {
+      "id": "person_alfred_chandler",
+      "type": "Person",
+      "name": "Alfred Chandler",
+      "name_zh": null,
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": null,
+        "description": "历史学家，研究商业管理革命。",
+        "occupation": "Historian",
+        "wikidata_id": null
+      }
+    },
+    "person_s_barry_cooper": {
+      "id": "person_s_barry_cooper",
+      "type": "Person",
+      "name": "S. Barry Cooper",
+      "name_zh": null,
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": null,
+        "description": "学者，编辑关于图灵工作的书籍。",
+        "occupation": "Scholar, Editor",
+        "wikidata_id": null
+      }
+    },
+    "concept_legacy_of_alan_turing": {
+      "id": "concept_legacy_of_alan_turing",
+      "type": "Concept",
+      "name": "Legacy of Alan Turing",
+      "name_zh": "艾伦·图灵的遗产",
+      "properties": {
+        "description": "艾伦·图灵对科学和社会的持久影响"
+      }
+    },
+    "concept_list_of_things_named_after_alan_turing": {
+      "id": "concept_list_of_things_named_after_alan_turing",
+      "type": "Concept",
+      "name": "List of things named after Alan Turing",
+      "name_zh": "以艾伦·图灵命名的事物列表",
+      "properties": {
+        "description": "以艾伦·图灵命名的各种事物和奖项"
+      }
+    },
+    "concept_list_of_suicides_of_lgbtq_people": {
+      "id": "concept_list_of_suicides_of_lgbtq_people",
+      "type": "Concept",
+      "name": "List of suicides of LGBTQ people",
+      "name_zh": "LGBTQ人群自杀列表",
+      "properties": {
+        "description": "记录LGBTQ人群自杀事件的相关列表"
+      }
+    },
+    "concept_list_of_pioneers_in_computer_science": {
+      "id": "concept_list_of_pioneers_in_computer_science",
+      "type": "Concept",
+      "name": "List of pioneers in computer science",
+      "name_zh": "计算机科学先驱列表",
+      "properties": {
+        "description": "计算机科学领域的重要先驱人物列表"
+      }
+    },
+    "field_computer_science": {
+      "id": "field_computer_science",
+      "type": "Field",
+      "name": "Computer Science",
+      "name_zh": "计算机科学",
+      "properties": {
+        "description": "研究计算机及其应用的学科领域"
+      }
+    },
+    "field_artificial_intelligence": {
+      "id": "field_artificial_intelligence",
+      "type": "Field",
+      "name": "Artificial Intelligence",
+      "name_zh": "人工智能",
+      "properties": {
+        "description": "研究智能机器和系统的学科领域"
+      }
+    },
+    "institution_university_of_manchester_library": {
+      "id": "institution_university_of_manchester_library",
+      "type": "Institution",
+      "name": "University of Manchester Library",
+      "name_zh": "曼彻斯特大学图书馆",
+      "properties": {
+        "institution_type": "Library",
+        "location": "Manchester, UK",
+        "description": "收藏艾伦·图灵论文的机构",
+        "wikidata_id": null
+      }
+    },
+    "institution_charles_babbage_institute": {
+      "id": "institution_charles_babbage_institute",
+      "type": "Institution",
+      "name": "Charles Babbage Institute",
+      "name_zh": "查尔斯·巴贝奇研究所",
+      "properties": {
+        "institution_type": "Research Institute",
+        "location": "Minnesota, USA",
+        "description": "计算机历史研究机构",
+        "wikidata_id": "Q1064487"
+      }
+    },
+    "institution_university_of_minnesota": {
+      "id": "institution_university_of_minnesota",
+      "type": "Institution",
+      "name": "University of Minnesota",
+      "name_zh": "明尼苏达大学",
+      "properties": {
+        "institution_type": "University",
+        "location": "Minnesota, USA",
+        "description": "查尔斯·巴贝奇研究所所在大学",
+        "wikidata_id": "Q49210"
+      }
+    },
+    "institution_los_alamos_national_laboratory": {
+      "id": "institution_los_alamos_national_laboratory",
+      "type": "Institution",
+      "name": "Los Alamos National Laboratory",
+      "name_zh": "洛斯阿拉莫斯国家实验室",
+      "properties": {
+        "institution_type": "Research Laboratory",
+        "location": "New Mexico, USA",
+        "description": "美国国家实验室，涉及计算服务",
+        "wikidata_id": "Q131186"
+      }
+    },
+    "institution_imperial_war_museums": {
+      "id": "institution_imperial_war_museums",
+      "type": "Institution",
+      "name": "Imperial War Museums",
+      "name_zh": "帝国战争博物馆",
+      "properties": {
+        "institution_type": "Museum",
+        "location": "London, UK",
+        "description": "英国战争博物馆，涉及图灵破解恩尼格玛",
+        "wikidata_id": "Q1361952"
+      }
+    },
+    "institution_old_shirburnian_society": {
+      "id": "institution_old_shirburnian_society",
+      "type": "Institution",
+      "name": "Old Shirburnian Society",
+      "name_zh": "老舍伯恩人协会",
+      "properties": {
+        "institution_type": "Alumni Association",
+        "location": "Sherborne, UK",
+        "description": "舍伯恩学校的校友协会",
+        "wikidata_id": null
+      }
+    },
+    "person_nicholas_c_metropolis": {
+      "id": "person_nicholas_c_metropolis",
+      "type": "Person",
+      "name": "Nicholas C. Metropolis",
+      "name_zh": "尼古拉斯·C·梅特罗波利斯",
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": "American",
+        "description": "洛斯阿拉莫斯国家实验室计算服务首任主任",
+        "occupation": "Physicist, Computer Scientist",
+        "wikidata_id": "Q1353905"
+      }
+    },
+    "person_john_von_neumann": {
+      "id": "person_john_von_neumann",
+      "type": "Person",
+      "name": "John von Neumann",
+      "name_zh": "约翰·冯·诺依曼",
+      "properties": {
+        "birth_date": "1903-12-28",
+        "death_date": "1957-02-08",
+        "nationality": "Hungarian-American",
+        "description": "数学家、计算机科学家",
+        "occupation": "Mathematician, Computer Scientist",
+        "wikidata_id": "Q27381"
+      }
+    },
+    "person_g_james_jones": {
+      "id": "person_g_james_jones",
+      "type": "Person",
+      "name": "G. James Jones",
+      "name_zh": "G·詹姆斯·琼斯",
+      "properties": {
+        "birth_date": null,
+        "death_date": null,
+        "nationality": null,
+        "description": "文章作者",
+        "occupation": "Author",
+        "wikidata_id": null
+      }
+    },
+    "publication_alan_turing_papers": {
+      "id": "publication_alan_turing_papers",
+      "type": "Publication",
+      "name": "Alan Turing Papers",
+      "name_zh": "艾伦·图灵论文",
+      "properties": {
+        "year": null,
+        "publication_type": "Archive",
+        "abstract": null,
+        "description": "艾伦·图灵的论文收藏",
+        "wikidata_id": null
+      }
+    },
+    "publication_alan_turing_towards_a_digital_mind_part_1": {
+      "id": "publication_alan_turing_towards_a_digital_mind_part_1",
+      "type": "Publication",
+      "name": "Alan Turing – Towards a Digital Mind: Part 1",
+      "name_zh": "艾伦·图灵——迈向数字思维：第一部分",
+      "properties": {
+        "year": "2001",
+        "publication_type": "Article",
+        "abstract": null,
+        "description": "关于艾伦·图灵的文章",
+        "wikidata_id": null
+      }
+    },
+    "concept_enigma_code": {
+      "id": "concept_enigma_code",
+      "type": "Concept",
+      "name": "Enigma Code",
+      "name_zh": "恩尼格玛密码",
+      "properties": {
+        "field": "Cryptography",
+        "description": "二战期间德国使用的密码系统",
+        "wikidata_id": "Q132364"
+      }
+    },
+    "event_cie_2012_turing_centenary_conference": {
+      "id": "event_cie_2012_turing_centenary_conference",
+      "type": "Event",
+      "name": "CiE 2012: Turing Centenary Conference",
+      "name_zh": "CiE 2012：图灵百年会议",
+      "properties": {
+        "start_date": "2012",
+        "end_date": "2012",
+        "location": null,
+        "description": "纪念艾伦·图灵百年诞辰的会议",
+        "wikidata_id": null
+      }
+    },
+    "event_alan_turing_year": {
+      "id": "event_alan_turing_year",
+      "type": "Event",
+      "name": "Alan Turing Year",
+      "name_zh": "艾伦·图灵年",
+      "properties": {
+        "start_date": "2012",
+        "end_date": "2012",
+        "location": null,
+        "description": "纪念艾伦·图灵的活动年",
+        "wikidata_id": null
+      }
+    }
+  },
+  "relations": [
+    {
+      "source": "person_alan_turing",
+      "relation": "BORN_IN",
+      "target": "place_london",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "EDUCATED_AT",
+      "target": "institution_kings_college_cambridge",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "EDUCATED_AT",
+      "target": "institution_princeton_university",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "WORKED_AT",
+      "target": "institution_government_code_and_cypher_school",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "PARTICIPATED_IN",
+      "target": "event_world_war_ii",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "CONTRIBUTED_TO",
+      "target": "concept_turing_machine",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "CONTRIBUTED_TO",
+      "target": "concept_algorithm",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "CONTRIBUTED_TO",
+      "target": "concept_computation",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "WORKED_AT",
+      "target": "institution_national_physical_laboratory",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "CONTRIBUTED_TO",
+      "target": "concept_automatic_computing_engine",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "WORKED_AT",
+      "target": "institution_university_of_manchester",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "CONTRIBUTED_TO",
+      "target": "concept_morphogenesis",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "CONTRIBUTED_TO",
+      "target": "concept_belousov_zhabotinsky_reaction",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "PARTICIPATED_IN",
+      "target": "event_prosecution_for_homosexual_acts",
+      "properties": {}
+    },
+    {
+      "source": "person_gordon_brown",
+      "relation": "RELATED_TO",
+      "target": "person_alan_turing",
+      "properties": {}
+    },
+    {
+      "source": "person_queen_elizabeth_ii",
+      "relation": "RELATED_TO",
+      "target": "person_alan_turing",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_alan_turing_law",
+      "properties": {}
+    },
+    {
+      "source": "institution_government_code_and_cypher_school",
+      "relation": "LOCATED_IN",
+      "target": "place_bletchley_park",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "INFLUENCED",
+      "target": "concept_turing_machine",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "FIELD_OF_WORK",
+      "target": "concept_algorithm",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "BORN_IN",
+      "target": "place_maida_vale_london",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "RELATED_TO",
+      "target": "person_julius_mathison_turing",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "RELATED_TO",
+      "target": "person_ethel_sara_turing",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "RELATED_TO",
+      "target": "person_john_ferrier_turing",
+      "properties": {}
+    },
+    {
+      "source": "person_julius_mathison_turing",
+      "relation": "RELATED_TO",
+      "target": "person_john_robert_turing",
+      "properties": {}
+    },
+    {
+      "source": "person_ethel_sara_turing",
+      "relation": "RELATED_TO",
+      "target": "person_edward_waller_stoney",
+      "properties": {}
+    },
+    {
+      "source": "person_john_ferrier_turing",
+      "relation": "RELATED_TO",
+      "target": "person_dermot_turing",
+      "properties": {}
+    },
+    {
+      "source": "person_julius_mathison_turing",
+      "relation": "WORKED_AT",
+      "target": "institution_indian_civil_service",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "EDUCATED_AT",
+      "target": "institution_st_michaels_school",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "EDUCATED_AT",
+      "target": "institution_hazelhurst_preparatory_school",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "EDUCATED_AT",
+      "target": "institution_sherborne_school",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "COLLABORATED_WITH",
+      "target": "person_christopher_collan_morcom",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "PARTICIPATED_IN",
+      "target": "event_1926_general_strike",
+      "properties": {}
+    },
+    {
+      "source": "institution_indian_civil_service",
+      "relation": "LOCATED_IN",
+      "target": "place_chatrapur",
+      "properties": {}
+    },
+    {
+      "source": "place_chatrapur",
+      "relation": "LOCATED_IN",
+      "target": "place_odisha",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "publication_natural_wonders_every_child_should_know",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "EDUCATED_AT",
+      "target": "institution_cambridge",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "WORKED_AT",
+      "target": "institution_bletchley_park",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "WORKED_AT",
+      "target": "institution_gc_cs",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "WORKED_AT",
+      "target": "institution_hanslope_park",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "COLLABORATED_WITH",
+      "target": "person_dilly_knox",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "COLLABORATED_WITH",
+      "target": "person_jack_good",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "AUTHORED",
+      "target": "publication_the_applications_of_probability_to_cryptography",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "AUTHORED",
+      "target": "publication_paper_on_statistics_of_repetitions",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "CONTRIBUTED_TO",
+      "target": "concept_cryptanalysis",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "CONTRIBUTED_TO",
+      "target": "concept_enigma_cipher_machine",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "CONTRIBUTED_TO",
+      "target": "concept_bombe",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "CONTRIBUTED_TO",
+      "target": "concept_banburismus",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "CONTRIBUTED_TO",
+      "target": "concept_turingery",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "CONTRIBUTED_TO",
+      "target": "concept_lorenz_sz_40_42",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "CONTRIBUTED_TO",
+      "target": "concept_delilah",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "PARTICIPATED_IN",
+      "target": "event_second_world_war",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "RECEIVED",
+      "target": "award_official_secrets_act",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "FIELD_OF_WORK",
+      "target": "field_mathematics",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "FIELD_OF_WORK",
+      "target": "field_cryptography",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "INFLUENCED_BY",
+      "target": "person_ludwig_wittgenstein",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_enigma_cipher_machine",
+      "properties": {}
+    },
+    {
+      "source": "institution_bletchley_park",
+      "relation": "LOCATED_IN",
+      "target": "place_uk",
+      "properties": {}
+    },
+    {
+      "source": "institution_gc_cs",
+      "relation": "PART_OF",
+      "target": "institution_gchq",
+      "properties": {}
+    },
+    {
+      "source": "institution_polish_cipher_bureau",
+      "relation": "LOCATED_IN",
+      "target": "place_poland",
+      "properties": {}
+    },
+    {
+      "source": "event_july_1939_meeting_near_warsaw",
+      "relation": "LOCATED_IN",
+      "target": "place_poland",
+      "properties": {}
+    },
+    {
+      "source": "publication_the_applications_of_probability_to_cryptography",
+      "relation": "ABOUT",
+      "target": "concept_cryptanalysis",
+      "properties": {}
+    },
+    {
+      "source": "publication_paper_on_statistics_of_repetitions",
+      "relation": "ABOUT",
+      "target": "concept_cryptanalysis",
+      "properties": {}
+    },
+    {
+      "source": "concept_formalism",
+      "relation": "PART_OF",
+      "target": "field_mathematics",
+      "properties": {}
+    },
+    {
+      "source": "concept_cryptanalysis",
+      "relation": "PART_OF",
+      "target": "field_cryptography",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "WORKED_AT",
+      "target": "place_bletchley_park",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "COLLABORATED_WITH",
+      "target": "person_joan_clarke",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_round_the_ouse_chess",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "COLLABORATED_WITH",
+      "target": "person_arnold_murray",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "PARTICIPATED_IN",
+      "target": "event_regina_v_turing_and_murray",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "WORKED_AT",
+      "target": "institution_gchq",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "PARTICIPATED_IN",
+      "target": "place_norway",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "COLLABORATED_WITH",
+      "target": "person_kjell_carlson",
+      "properties": {}
+    },
+    {
+      "source": "person_arnold_murray",
+      "relation": "PARTICIPATED_IN",
+      "target": "event_regina_v_turing_and_murray",
+      "properties": {}
+    },
+    {
+      "source": "event_regina_v_turing_and_murray",
+      "relation": "LOCATED_IN",
+      "target": "place_knutsford",
+      "properties": {}
+    },
+    {
+      "source": "place_wilmslow",
+      "relation": "LOCATED_IN",
+      "target": "place_manchester",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "DIED_IN",
+      "target": "place_wilmslow",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "PARTICIPATED_IN",
+      "target": "event_death_of_alan_turing",
+      "properties": {}
+    },
+    {
+      "source": "person_john_turing",
+      "relation": "RELATED_TO",
+      "target": "person_alan_turing",
+      "properties": {}
+    },
+    {
+      "source": "person_dermot_turing",
+      "relation": "RELATED_TO",
+      "target": "person_alan_turing",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "PARTICIPATED_IN",
+      "target": "event_inquest",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "PARTICIPATED_IN",
+      "target": "event_cremation",
+      "properties": {}
+    },
+    {
+      "source": "event_cremation",
+      "relation": "LOCATED_IN",
+      "target": "place_woking_crematorium",
+      "properties": {}
+    },
+    {
+      "source": "person_jack_copeland",
+      "relation": "INFLUENCED",
+      "target": "concept_cyanide_poisoning",
+      "properties": {}
+    },
+    {
+      "source": "person_andrew_hodges",
+      "relation": "AUTHORED",
+      "target": "publication_snow_white_and_the_seven_dwarfs",
+      "properties": {}
+    },
+    {
+      "source": "person_david_leavitt",
+      "relation": "AUTHORED",
+      "target": "publication_snow_white_and_the_seven_dwarfs",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_cyanide_poisoning",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_suicide",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "CONTRIBUTED_TO",
+      "target": "concept_electroplating",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "CONTRIBUTED_TO",
+      "target": "concept_fortune_telling",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "FIELD_OF_WORK",
+      "target": "field_cold_war",
+      "properties": {}
+    },
+    {
+      "source": "person_john_graham_cumming",
+      "relation": "PARTICIPATED_IN",
+      "target": "event_government_apology",
+      "properties": {}
+    },
+    {
+      "source": "person_gordon_brown",
+      "relation": "PARTICIPATED_IN",
+      "target": "event_government_apology",
+      "properties": {}
+    },
+    {
+      "source": "person_william_jones",
+      "relation": "PARTICIPATED_IN",
+      "target": "event_turing_prosecution",
+      "properties": {}
+    },
+    {
+      "source": "person_john_leech",
+      "relation": "PARTICIPATED_IN",
+      "target": "event_turing_prosecution",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "PARTICIPATED_IN",
+      "target": "event_turing_prosecution",
+      "properties": {}
+    },
+    {
+      "source": "person_lord_mcnally",
+      "relation": "PARTICIPATED_IN",
+      "target": "event_turing_prosecution",
+      "properties": {}
+    },
+    {
+      "source": "person_stephen_hawking",
+      "relation": "PARTICIPATED_IN",
+      "target": "event_turing_prosecution",
+      "properties": {}
+    },
+    {
+      "source": "person_lord_rees",
+      "relation": "PARTICIPATED_IN",
+      "target": "event_turing_prosecution",
+      "properties": {}
+    },
+    {
+      "source": "person_sir_paul_nurse",
+      "relation": "PARTICIPATED_IN",
+      "target": "event_turing_prosecution",
+      "properties": {}
+    },
+    {
+      "source": "person_lady_trumpington",
+      "relation": "PARTICIPATED_IN",
+      "target": "event_turing_prosecution",
+      "properties": {}
+    },
+    {
+      "source": "person_lord_sharkey",
+      "relation": "PARTICIPATED_IN",
+      "target": "event_turing_prosecution",
+      "properties": {}
+    },
+    {
+      "source": "person_david_cameron",
+      "relation": "PARTICIPATED_IN",
+      "target": "event_turing_prosecution",
+      "properties": {}
+    },
+    {
+      "source": "person_christopher_chope",
+      "relation": "PARTICIPATED_IN",
+      "target": "event_turing_prosecution",
+      "properties": {}
+    },
+    {
+      "source": "institution_british_government",
+      "relation": "PARTICIPATED_IN",
+      "target": "event_government_apology",
+      "properties": {}
+    },
+    {
+      "source": "institution_parliament",
+      "relation": "PARTICIPATED_IN",
+      "target": "event_turing_prosecution",
+      "properties": {}
+    },
+    {
+      "source": "institution_house_of_lords",
+      "relation": "PARTICIPATED_IN",
+      "target": "event_turing_prosecution",
+      "properties": {}
+    },
+    {
+      "source": "institution_house_of_commons",
+      "relation": "PARTICIPATED_IN",
+      "target": "event_turing_prosecution",
+      "properties": {}
+    },
+    {
+      "source": "institution_royal_society",
+      "relation": "PARTICIPATED_IN",
+      "target": "event_turing_prosecution",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "WORKED_AT",
+      "target": "institution_british_government",
+      "properties": {}
+    },
+    {
+      "source": "person_john_leech",
+      "relation": "WORKED_AT",
+      "target": "institution_parliament",
+      "properties": {}
+    },
+    {
+      "source": "person_b_jack_copeland",
+      "relation": "AUTHORED",
+      "target": "publication_the_mind_and_the_computing_machine",
+      "properties": {}
+    },
+    {
+      "source": "person_b_jack_copeland",
+      "relation": "AUTHORED",
+      "target": "publication_alan_turing_father_of_the_modern_computer",
+      "properties": {}
+    },
+    {
+      "source": "person_andrew_hodges",
+      "relation": "AUTHORED",
+      "target": "publication_turing_alan_mathison",
+      "properties": {}
+    },
+    {
+      "source": "person_andrew_hodges",
+      "relation": "AUTHORED",
+      "target": "publication_alan_turing_stanford_encyclopedia",
+      "properties": {}
+    },
+    {
+      "source": "person_paul_gray",
+      "relation": "AUTHORED",
+      "target": "publication_computer_scientist_alan_turing",
+      "properties": {}
+    },
+    {
+      "source": "person_h_o_connell",
+      "relation": "AUTHORED",
+      "target": "publication_did_alan_turing_have_aspergers_syndrome",
+      "properties": {}
+    },
+    {
+      "source": "person_m_fitzgerald",
+      "relation": "AUTHORED",
+      "target": "publication_did_alan_turing_have_aspergers_syndrome",
+      "properties": {}
+    },
+    {
+      "source": "person_john_j_o_connor",
+      "relation": "AUTHORED",
+      "target": "publication_alan_mathison_turing_mactutor",
+      "properties": {}
+    },
+    {
+      "source": "person_edmund_f_robertson",
+      "relation": "AUTHORED",
+      "target": "publication_alan_mathison_turing_mactutor",
+      "properties": {}
+    },
+    {
+      "source": "person_jon_agar",
+      "relation": "AUTHORED",
+      "target": "publication_turing_and_the_universal_machine",
+      "properties": {}
+    },
+    {
+      "source": "person_jon_agar",
+      "relation": "AUTHORED",
+      "target": "publication_the_government_machine",
+      "properties": {}
+    },
+    {
+      "source": "person_charles_babbage",
+      "relation": "AUTHORED",
+      "target": "publication_the_works_of_charles_babbage",
+      "properties": {}
+    },
+    {
+      "source": "person_martin_campbell_kelly",
+      "relation": "AUTHORED",
+      "target": "publication_the_works_of_charles_babbage",
+      "properties": {}
+    },
+    {
+      "source": "person_james_beniger",
+      "relation": "AUTHORED",
+      "target": "publication_the_control_revolution",
+      "properties": {}
+    },
+    {
+      "source": "person_chris_bernhardt",
+      "relation": "AUTHORED",
+      "target": "publication_turings_vision",
+      "properties": {}
+    },
+    {
+      "source": "person_david_bodanis",
+      "relation": "AUTHORED",
+      "target": "publication_electric_universe",
+      "properties": {}
+    },
+    {
+      "source": "person_herbert_bruderer",
+      "relation": "AUTHORED",
+      "target": "publication_die_maschinen_von_charles_babbage_alan_turing_und_john_von_neumann",
+      "properties": {}
+    },
+    {
+      "source": "person_martin_campbell_kelly",
+      "relation": "AUTHORED",
+      "target": "publication_computer_a_history_of_the_information_machine",
+      "properties": {}
+    },
+    {
+      "source": "person_william_aspray",
+      "relation": "AUTHORED",
+      "target": "publication_computer_a_history_of_the_information_machine",
+      "properties": {}
+    },
+    {
+      "source": "person_paul_e_ceruzzi",
+      "relation": "AUTHORED",
+      "target": "publication_a_history_of_modern_computing",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_legacy_of_alan_turing",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_list_of_things_named_after_alan_turing",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "CONTRIBUTED_TO",
+      "target": "field_computer_science",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "CONTRIBUTED_TO",
+      "target": "field_artificial_intelligence",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "PARTICIPATED_IN",
+      "target": "concept_list_of_suicides_of_lgbtq_people",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "PARTICIPATED_IN",
+      "target": "concept_list_of_pioneers_in_computer_science",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "EDUCATED_AT",
+      "target": "institution_kings_college_cambridge",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "EDUCATED_AT",
+      "target": "institution_sherborne_school",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "WORKED_AT",
+      "target": "institution_kings_college_cambridge",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "AUTHORED",
+      "target": "publication_alan_turing_papers",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "CONTRIBUTED_TO",
+      "target": "concept_enigma_code",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_enigma_code",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "PARTICIPATED_IN",
+      "target": "event_cie_2012_turing_centenary_conference",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "PARTICIPATED_IN",
+      "target": "event_alan_turing_year",
+      "properties": {}
+    },
+    {
+      "source": "person_nicholas_c_metropolis",
+      "relation": "WORKED_AT",
+      "target": "institution_los_alamos_national_laboratory",
+      "properties": {}
+    },
+    {
+      "source": "person_nicholas_c_metropolis",
+      "relation": "COLLABORATED_WITH",
+      "target": "person_john_von_neumann",
+      "properties": {}
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "COLLABORATED_WITH",
+      "target": "person_john_von_neumann",
+      "properties": {}
+    },
+    {
+      "source": "person_jack_copeland",
+      "relation": "AUTHORED",
+      "target": "publication_alan_turing_papers",
+      "properties": {}
+    },
+    {
+      "source": "person_andrew_hodges",
+      "relation": "AUTHORED",
+      "target": "publication_alan_turing_towards_a_digital_mind_part_1",
+      "properties": {}
+    },
+    {
+      "source": "person_g_james_jones",
+      "relation": "AUTHORED",
+      "target": "publication_alan_turing_towards_a_digital_mind_part_1",
+      "properties": {}
+    },
+    {
+      "source": "institution_university_of_manchester_library",
+      "relation": "LOCATED_IN",
+      "target": "institution_kings_college_cambridge",
+      "properties": {}
+    },
+    {
+      "source": "institution_charles_babbage_institute",
+      "relation": "LOCATED_IN",
+      "target": "institution_university_of_minnesota",
+      "properties": {}
+    },
+    {
+      "source": "institution_old_shirburnian_society",
+      "relation": "PART_OF",
+      "target": "institution_sherborne_school",
+      "properties": {}
+    },
+    {
+      "source": "publication_alan_turing_towards_a_digital_mind_part_1",
+      "relation": "ABOUT",
+      "target": "person_alan_turing",
+      "properties": {}
+    }
+  ]
+}

@@ -1,0 +1,1197 @@
+{
+  "entities": {
+    "person_alan_turing": {
+      "id": "person_alan_turing",
+      "type": "Person",
+      "name": "Alan Turing",
+      "name_zh": "艾伦·图灵",
+      "birth_date": "1912-06-23",
+      "death_date": "1954-06-07",
+      "nationality": "British",
+      "description": "British mathematician, computer scientist, logician, cryptanalyst, philosopher, and theoretical biologist",
+      "occupation": "mathematician, computer scientist, cryptanalyst",
+      "wikidata_id": "Q7251"
+    },
+    "person_stephen_wolfram": {
+      "id": "person_stephen_wolfram",
+      "type": "Person",
+      "name": "Stephen Wolfram",
+      "description": "British-American scientist and businessman (born 1959)",
+      "birth_date": "1959-08-29",
+      "death_date": "",
+      "wikidata_id": "Q310798"
+    },
+    "person_robin_gandy": {
+      "id": "person_robin_gandy",
+      "type": "Person",
+      "name": "Robin Gandy",
+      "description": "British mathematician and logician",
+      "birth_date": "1919-09-22",
+      "death_date": "1995-11-20",
+      "wikidata_id": "Q249984"
+    },
+    "person_julius_mathison_turing": {
+      "id": "person_julius_mathison_turing",
+      "type": "Person",
+      "name": "Julius Mathison Turing",
+      "description": "father of Alan Turing, English mathematician (1873-1947)",
+      "birth_date": "1873-11-09",
+      "death_date": "1947-08-03",
+      "wikidata_id": "Q20895930"
+    },
+    "person_cicely_popplewell": {
+      "id": "person_cicely_popplewell",
+      "type": "Person",
+      "name": "Cicely Popplewell",
+      "description": "British software engineer",
+      "birth_date": "1920-10-29",
+      "death_date": "1995-06-20",
+      "wikidata_id": "Q59884129"
+    },
+    "person_beatrice_helen_worsley": {
+      "id": "person_beatrice_helen_worsley",
+      "type": "Person",
+      "name": "Beatrice Helen Worsley",
+      "description": "first female computer scientist in Canada (1922-1972)",
+      "birth_date": "1921-10-18",
+      "death_date": "1972-05-08",
+      "wikidata_id": "Q16493"
+    },
+    "person_ethel_sara_stoney": {
+      "id": "person_ethel_sara_stoney",
+      "type": "Person",
+      "name": "Ethel Sara Stoney",
+      "description": "mother of Alan Turing, English mathematician",
+      "birth_date": "1881-11-18",
+      "death_date": "1976-03-06",
+      "wikidata_id": "Q20895935"
+    },
+    "person_max_newman": {
+      "id": "person_max_newman",
+      "type": "Person",
+      "name": "Max Newman",
+      "description": "British mathematician (1897–1984)",
+      "birth_date": "1897-02-07",
+      "death_date": "1984-02-22",
+      "wikidata_id": "Q707155"
+    },
+    "person_gh_hardy": {
+      "id": "person_gh_hardy",
+      "type": "Person",
+      "name": "G.H. Hardy",
+      "description": "British mathematician (1877–1947)",
+      "birth_date": "1877-02-07",
+      "death_date": "1947-12-01",
+      "wikidata_id": "Q184337"
+    },
+    "person_christopher_morcom": {
+      "id": "person_christopher_morcom",
+      "type": "Person",
+      "name": "Christopher Morcom",
+      "description": "British scientist",
+      "birth_date": "1911-07-13",
+      "death_date": "1930-02-13",
+      "wikidata_id": "Q21693479"
+    },
+    "person_andrew_hodges": {
+      "id": "person_andrew_hodges",
+      "type": "Person",
+      "name": "Andrew Hodges",
+      "description": "mathematician and popular science author",
+      "birth_date": "1949-01-01",
+      "death_date": "",
+      "wikidata_id": "Q450154"
+    },
+    "person_alonzo_church": {
+      "id": "person_alonzo_church",
+      "type": "Person",
+      "name": "Alonzo Church",
+      "description": "American mathematician and logician (1903–1995)",
+      "birth_date": "1903-06-14",
+      "death_date": "1995-08-11",
+      "wikidata_id": "Q92741"
+    },
+    "person_dermot_turing": {
+      "id": "person_dermot_turing",
+      "type": "Person",
+      "name": "Dermot Turing",
+      "description": "British solicitor and author",
+      "birth_date": "1961-02-26",
+      "death_date": "",
+      "wikidata_id": "Q43075535"
+    },
+    "person_saul_kripke": {
+      "id": "person_saul_kripke",
+      "type": "Person",
+      "name": "Saul Kripke",
+      "description": "American philosopher and logician (1940–2022)",
+      "birth_date": "1940-11-13",
+      "death_date": "2022-09-15",
+      "wikidata_id": "Q298521"
+    },
+    "person_i_j_good": {
+      "id": "person_i_j_good",
+      "type": "Person",
+      "name": "I. J. Good",
+      "description": "British statistician and cryptographer (1916–2009)",
+      "birth_date": "1916-12-09",
+      "death_date": "2009-04-05",
+      "wikidata_id": "Q224372"
+    },
+    "inst_royal_society": {
+      "id": "inst_royal_society",
+      "type": "Institution",
+      "name": "Royal Society",
+      "description": "English learned society for science",
+      "location": "United Kingdom",
+      "wikidata_id": "Q123885"
+    },
+    "inst_guildford": {
+      "id": "inst_guildford",
+      "type": "Institution",
+      "name": "Guildford",
+      "description": "county town of Surrey in England",
+      "location": "United Kingdom",
+      "wikidata_id": "Q213465"
+    },
+    "inst_atheism": {
+      "id": "inst_atheism",
+      "type": "Institution",
+      "name": "atheism",
+      "description": "absence of belief in the existence of deities; the opposite of theism",
+      "location": "",
+      "wikidata_id": "Q7066"
+    },
+    "inst_wikipedia:list_of_articles_all_languages_should_have": {
+      "id": "inst_wikipedia:list_of_articles_all_languages_should_have",
+      "type": "Institution",
+      "name": "Wikipedia:List of articles all languages should have",
+      "description": "list of 1000 articles every Wikipedia edition should have",
+      "location": "",
+      "wikidata_id": "Q5460604"
+    },
+    "inst_king's_college": {
+      "id": "inst_king's_college",
+      "type": "Institution",
+      "name": "King's College",
+      "description": "college of the University of Cambridge",
+      "location": "United Kingdom",
+      "wikidata_id": "Q924289"
+    },
+    "inst_hazlehurst_community_primary_school": {
+      "id": "inst_hazlehurst_community_primary_school",
+      "type": "Institution",
+      "name": "Hazlehurst Community Primary School",
+      "description": "school in Bury, UK",
+      "location": "United Kingdom",
+      "wikidata_id": "Q66135280"
+    },
+    "inst_princeton_university": {
+      "id": "inst_princeton_university",
+      "type": "Institution",
+      "name": "Princeton University",
+      "description": "private Ivy League research university in Princeton, New Jersey, United States",
+      "location": "United States",
+      "wikidata_id": "Q21578"
+    },
+    "inst_national_physical_laboratory": {
+      "id": "inst_national_physical_laboratory",
+      "type": "Institution",
+      "name": "National Physical Laboratory",
+      "description": "National Measurement Institution of the United Kingdom",
+      "location": "United Kingdom",
+      "wikidata_id": "Q1967606"
+    },
+    "inst_king's_college_cambridge_archive": {
+      "id": "inst_king's_college_cambridge_archive",
+      "type": "Institution",
+      "name": "King's College Cambridge archive",
+      "description": "archival institution in United Kingdom",
+      "location": "United Kingdom",
+      "wikidata_id": "Q81165230"
+    },
+    "inst_wikiproject_mathematics": {
+      "id": "inst_wikiproject_mathematics",
+      "type": "Institution",
+      "name": "WikiProject Mathematics",
+      "description": "Wikimedia subject-area collaboration",
+      "location": "",
+      "wikidata_id": "Q8487137"
+    },
+    "inst_wiki99/lgbt+": {
+      "id": "inst_wiki99/lgbt+",
+      "type": "Institution",
+      "name": "Wiki99/LGBT+",
+      "description": "list of ca. 99 LGBT+ topics that a Wikipedia should have",
+      "location": "",
+      "wikidata_id": "Q97285685"
+    },
+    "inst_sherborne_school": {
+      "id": "inst_sherborne_school",
+      "type": "Institution",
+      "name": "Sherborne School",
+      "description": "school in Sherborne, Dorset, England, UK",
+      "location": "United Kingdom",
+      "wikidata_id": "Q2278254"
+    },
+    "inst_wilmslow": {
+      "id": "inst_wilmslow",
+      "type": "Institution",
+      "name": "Wilmslow",
+      "description": "town and civil parish in Cheshire East, England",
+      "location": "United Kingdom",
+      "wikidata_id": "Q2011497"
+    },
+    "inst_victoria_university_of_manchester": {
+      "id": "inst_victoria_university_of_manchester",
+      "type": "Institution",
+      "name": "Victoria University of Manchester",
+      "description": "British university (1851-2004)",
+      "location": "United Kingdom",
+      "wikidata_id": "Q867530"
+    },
+    "inst_government_communications_headquarters": {
+      "id": "inst_government_communications_headquarters",
+      "type": "Institution",
+      "name": "Government Communications Headquarters",
+      "description": "British intelligence agency",
+      "location": "United Kingdom",
+      "wikidata_id": "Q220798"
+    },
+    "inst_wikipedia:vital_articles/level/4": {
+      "id": "inst_wikipedia:vital_articles/level/4",
+      "type": "Institution",
+      "name": "Wikipedia:Vital articles/Level/4",
+      "description": "Wikimedia project page",
+      "location": "",
+      "wikidata_id": "Q6173448"
+    },
+    "inst_university_of_cambridge": {
+      "id": "inst_university_of_cambridge",
+      "type": "Institution",
+      "name": "University of Cambridge",
+      "description": "collegiate public research university in Cambridge, England, United Kingdom",
+      "location": "United Kingdom",
+      "wikidata_id": "Q35794"
+    },
+    "inst_united_kingdom": {
+      "id": "inst_united_kingdom",
+      "type": "Institution",
+      "name": "United Kingdom",
+      "description": "island country in north-west Europe",
+      "location": "United Kingdom",
+      "wikidata_id": "Q145"
+    },
+    "pub_turing's_proof": {
+      "id": "pub_turing's_proof",
+      "type": "Publication",
+      "name": "Turing's proof",
+      "description": "Proof by Alan Turing",
+      "year": "1936",
+      "wikidata_id": "Q7854954"
+    },
+    "pub_intelligent_machinery": {
+      "id": "pub_intelligent_machinery",
+      "type": "Publication",
+      "name": "Intelligent Machinery",
+      "description": "report by Alan Turing to NPL, 1948",
+      "year": "",
+      "wikidata_id": "Q20895966"
+    },
+    "concept_good–turing_frequency_estimation": {
+      "id": "concept_good–turing_frequency_estimation",
+      "type": "Concept",
+      "name": "Good–Turing frequency estimation",
+      "description": "statistical technique",
+      "wikidata_id": "Q5583769"
+    },
+    "concept_the_annotated_turing": {
+      "id": "concept_the_annotated_turing",
+      "type": "Concept",
+      "name": "The Annotated Turing",
+      "description": "non-fiction work by Charles Petzold",
+      "wikidata_id": "Q7713868"
+    },
+    "concept_alan_turingplein": {
+      "id": "concept_alan_turingplein",
+      "type": "Concept",
+      "name": "Alan Turingplein",
+      "description": "square in Amsterdam, the Netherlands",
+      "wikidata_id": "Q112426447"
+    },
+    "concept_turing": {
+      "id": "concept_turing",
+      "type": "Concept",
+      "name": "Turing",
+      "description": "programming language",
+      "wikidata_id": "Q490481"
+    },
+    "concept_turing_completeness": {
+      "id": "concept_turing_completeness",
+      "type": "Concept",
+      "name": "Turing completeness",
+      "description": "ability of a computing system to simulate Turing machines",
+      "wikidata_id": "Q197970"
+    },
+    "concept_computer_scientist": {
+      "id": "concept_computer_scientist",
+      "type": "Concept",
+      "name": "computer scientist",
+      "description": "one who studies or practices computer science",
+      "wikidata_id": "Q82594"
+    },
+    "concept_alan_turing_year": {
+      "id": "concept_alan_turing_year",
+      "type": "Concept",
+      "name": "Alan Turing Year",
+      "description": "international observance",
+      "wikidata_id": "Q4707947"
+    },
+    "concept_parvis_alan-turing": {
+      "id": "concept_parvis_alan-turing",
+      "type": "Concept",
+      "name": "Parvis Alan-Turing",
+      "description": "esplanade in Paris, France",
+      "wikidata_id": "Q88537457"
+    },
+    "concept_alan_turing_institute": {
+      "id": "concept_alan_turing_institute",
+      "type": "Concept",
+      "name": "Alan Turing Institute",
+      "description": "research institute in Britain",
+      "wikidata_id": "Q16826821"
+    },
+    "concept_alan_turing_centenary_conference": {
+      "id": "concept_alan_turing_centenary_conference",
+      "type": "Concept",
+      "name": "Alan Turing Centenary Conference",
+      "description": "Computer Science Conference celebrating Alan Turing in his centenary year",
+      "wikidata_id": "Q4707938"
+    },
+    "concept_alan_turing_building": {
+      "id": "concept_alan_turing_building",
+      "type": "Concept",
+      "name": "Alan Turing Building",
+      "description": "University building at the University of Manchester",
+      "wikidata_id": "Q4707939"
+    },
+    "concept_turing+": {
+      "id": "concept_turing+",
+      "type": "Concept",
+      "name": "Turing+",
+      "description": "Pascal-like programming language",
+      "wikidata_id": "Q7665580"
+    },
+    "concept_turing_institute": {
+      "id": "concept_turing_institute",
+      "type": "Concept",
+      "name": "Turing Institute",
+      "description": "Scottish artificial intelligence laboratory",
+      "wikidata_id": "Q17056310"
+    },
+    "concept_church–turing_theorem": {
+      "id": "concept_church–turing_theorem",
+      "type": "Concept",
+      "name": "Church–Turing theorem",
+      "description": "",
+      "wikidata_id": "Q18212353"
+    },
+    "concept_symmetric_turing_machine": {
+      "id": "concept_symmetric_turing_machine",
+      "type": "Concept",
+      "name": "Symmetric Turing machine",
+      "description": "graph Machine",
+      "wikidata_id": "Q7661303"
+    },
+    "concept_alan_turing:_the_enigma": {
+      "id": "concept_alan_turing:_the_enigma",
+      "type": "Concept",
+      "name": "Alan Turing: The Enigma",
+      "description": "",
+      "wikidata_id": "Q18574712"
+    },
+    "concept_turing_jump": {
+      "id": "concept_turing_jump",
+      "type": "Concept",
+      "name": "Turing jump",
+      "description": "",
+      "wikidata_id": "Q6128725"
+    },
+    "concept_turing_degree": {
+      "id": "concept_turing_degree",
+      "type": "Concept",
+      "name": "Turing degree",
+      "description": "measurement for the level of algorithmic unsolvability of a set",
+      "wikidata_id": "Q1527413"
+    },
+    "concept_cryptographer": {
+      "id": "concept_cryptographer",
+      "type": "Concept",
+      "name": "cryptographer",
+      "description": "specialist on techniques for secure communication in the presence of third parties",
+      "wikidata_id": "Q15442776"
+    },
+    "concept_turing_machine": {
+      "id": "concept_turing_machine",
+      "type": "Concept",
+      "name": "Turing machine",
+      "description": "abstract computation model; mathematical model of computation that defines an abstract machine which manipulates symbols on a strip of tape according to a table of rules",
+      "wikidata_id": "Q163310"
+    },
+    "concept_alan_turing_law": {
+      "id": "concept_alan_turing_law",
+      "type": "Concept",
+      "name": "Alan Turing law",
+      "description": "2017 British law pardoning formerly-illegal sex acts",
+      "wikidata_id": "Q27502852"
+    },
+    "concept_type-2_turing_machine": {
+      "id": "concept_type-2_turing_machine",
+      "type": "Concept",
+      "name": "type-2 Turing machine",
+      "description": "extension of a Turing machine",
+      "wikidata_id": "Q2460742"
+    },
+    "concept_bombe": {
+      "id": "concept_bombe",
+      "type": "Concept",
+      "name": "Bombe",
+      "description": "codebreaking device created at Bletchley Park (United Kingdom)",
+      "wikidata_id": "Q480476"
+    },
+    "concept_turing's_wager": {
+      "id": "concept_turing's_wager",
+      "type": "Concept",
+      "name": "Turing's Wager",
+      "description": "philosophical argument developed by Alan Turing",
+      "wikidata_id": "Q39086154"
+    },
+    "concept_halting_problem": {
+      "id": "concept_halting_problem",
+      "type": "Concept",
+      "name": "halting problem",
+      "description": "problem of determining whether a given program will finish running or continue forever",
+      "wikidata_id": "Q622849"
+    },
+    "concept_turing's_proof": {
+      "id": "concept_turing's_proof",
+      "type": "Concept",
+      "name": "Turing's proof",
+      "description": "Proof by Alan Turing",
+      "wikidata_id": "Q7854954"
+    },
+    "concept_turing_talk": {
+      "id": "concept_turing_talk",
+      "type": "Concept",
+      "name": "Turing Talk",
+      "description": "annual award lecture delivered by a noted speaker on computer science",
+      "wikidata_id": "Q7854957"
+    },
+    "concept_turing_switch": {
+      "id": "concept_turing_switch",
+      "type": "Concept",
+      "name": "Turing switch",
+      "description": "logical construction model of the operation of a network switch",
+      "wikidata_id": "Q7854967"
+    },
+    "concept_turingery": {
+      "id": "concept_turingery",
+      "type": "Concept",
+      "name": "Turingery",
+      "description": "hand codebreaking method",
+      "wikidata_id": "Q7854970"
+    },
+    "concept_place_alan_turing": {
+      "id": "concept_place_alan_turing",
+      "type": "Concept",
+      "name": "Place Alan Turing",
+      "description": "parking lot on the EPFL campus, Ecublens, Switzerland",
+      "wikidata_id": "Q124100093"
+    },
+    "concept_alan_turing_institute_almere": {
+      "id": "concept_alan_turing_institute_almere",
+      "type": "Concept",
+      "name": "Alan Turing Institute Almere",
+      "description": "facility in Almere Stad, Netherlands",
+      "wikidata_id": "Q50037785"
+    },
+    "concept_un_digito_binario_dudoso_recital_para_alan_turing": {
+      "id": "concept_un_digito_binario_dudoso_recital_para_alan_turing",
+      "type": "Concept",
+      "name": "Un digito binario dudoso. Recital para Alan Turing",
+      "description": "2012 album by the musical group Hidrogenesse",
+      "wikidata_id": "Q6155513"
+    },
+    "concept_lot_03308": {
+      "id": "concept_lot_03308",
+      "type": "Concept",
+      "name": "Lot 03308",
+      "description": "Kawasan Rumah",
+      "wikidata_id": "Q25386674"
+    },
+    "concept_turing_house_school": {
+      "id": "concept_turing_house_school",
+      "type": "Concept",
+      "name": "Turing House School",
+      "description": "school in Richmond upon Thames, UK",
+      "wikidata_id": "Q28407872"
+    },
+    "concept_alan-turing-allee": {
+      "id": "concept_alan-turing-allee",
+      "type": "Concept",
+      "name": "Alan-Turing-Allee",
+      "description": "street in Braunschweig, Lower Saxony, Germany",
+      "wikidata_id": "Q116619967"
+    },
+    "concept_non-deterministic_turing_machine": {
+      "id": "concept_non-deterministic_turing_machine",
+      "type": "Concept",
+      "name": "non-deterministic Turing machine",
+      "description": "may have a set of rules that prescribes more than one action for a given situation; state and tape symbol no longer uniquely specify things; rather, many different actions may apply for the same combination of state and symbol",
+      "wikidata_id": "Q1190223"
+    },
+    "concept_probabilistic_turing_machine": {
+      "id": "concept_probabilistic_turing_machine",
+      "type": "Concept",
+      "name": "probabilistic Turing machine",
+      "description": "non-deterministic Turing machine which chooses between the available transitions at each point according to some probability distribution",
+      "wikidata_id": "Q1191836"
+    },
+    "concept_universal_turing_machine": {
+      "id": "concept_universal_turing_machine",
+      "type": "Concept",
+      "name": "universal Turing machine",
+      "description": "turing machine that can simulate an arbitrary Turing machine on arbitrary input by reading both the description of the machine to be simulated as well as the input thereof from its own tape",
+      "wikidata_id": "Q2703890"
+    },
+    "concept_turing_award": {
+      "id": "concept_turing_award",
+      "type": "Concept",
+      "name": "Turing Award",
+      "description": "computer science award",
+      "wikidata_id": "Q185667"
+    },
+    "concept_turing_college,_kent": {
+      "id": "concept_turing_college,_kent",
+      "type": "Concept",
+      "name": "Turing College, Kent",
+      "description": "College of the University of Kent",
+      "wikidata_id": "Q47508586"
+    },
+    "concept_turing_reduction": {
+      "id": "concept_turing_reduction",
+      "type": "Concept",
+      "name": "Turing reduction",
+      "description": "concept in computability theory",
+      "wikidata_id": "Q4489310"
+    },
+    "concept_turing_foundation": {
+      "id": "concept_turing_foundation",
+      "type": "Concept",
+      "name": "Turing Foundation",
+      "description": "Dutch charitable organization",
+      "wikidata_id": "Q2725733"
+    },
+    "concept_小行星10204": {
+      "id": "concept_小行星10204",
+      "type": "Concept",
+      "name": "小行星10204",
+      "description": "asteroid",
+      "wikidata_id": "Q1088636"
+    },
+    "concept_church–turing_thesis": {
+      "id": "concept_church–turing_thesis",
+      "type": "Concept",
+      "name": "Church–Turing thesis",
+      "description": "thesis about the nature of computable functions",
+      "wikidata_id": "Q309157"
+    },
+    "concept_intelligent_machinery": {
+      "id": "concept_intelligent_machinery",
+      "type": "Concept",
+      "name": "Intelligent Machinery",
+      "description": "report by Alan Turing to NPL, 1948",
+      "wikidata_id": "Q20895966"
+    },
+    "concept_turing_test": {
+      "id": "concept_turing_test",
+      "type": "Concept",
+      "name": "Turing test",
+      "description": "test of a machine's ability to exhibit intelligent behaviour equivalent to, or indistinguishable from, that of a human",
+      "wikidata_id": "Q189223"
+    },
+    "concept_turochamp": {
+      "id": "concept_turochamp",
+      "type": "Concept",
+      "name": "Turochamp",
+      "description": "chess program",
+      "wikidata_id": "Q18592284"
+    },
+    "concept_church–turing–deutsch_principle": {
+      "id": "concept_church–turing–deutsch_principle",
+      "type": "Concept",
+      "name": "Church–Turing–Deutsch principle",
+      "description": "stronger, physical form of the Church–Turing thesis, that a universal Turing machine can simulate every physical process",
+      "wikidata_id": "Q4353569"
+    },
+    "concept_turing_machine_with_additional_input": {
+      "id": "concept_turing_machine_with_additional_input",
+      "type": "Concept",
+      "name": "Turing machine with additional input",
+      "description": "computational model in theoretical computer science equivalent to a nondeterministic Turing machine",
+      "wikidata_id": "Q1368514"
+    },
+    "award_fellow_of_the_royal_society": {
+      "id": "award_fellow_of_the_royal_society",
+      "type": "Award",
+      "name": "Fellow of the Royal Society",
+      "description": "elected Fellow of the Royal Society in London, including Honorary, Foreign and Royal Fellows",
+      "wikidata_id": "Q15631401"
+    },
+    "award_smith's_prize": {
+      "id": "award_smith's_prize",
+      "type": "Award",
+      "name": "Smith's Prize",
+      "description": "Prize from University of Cambridge in mathematics and theoretical physics",
+      "wikidata_id": "Q1690167"
+    },
+    "award_officer_of_the_order_of_the_british_empire": {
+      "id": "award_officer_of_the_order_of_the_british_empire",
+      "type": "Award",
+      "name": "Officer of the Order of the British Empire",
+      "description": "award, rank of the Order of the British Empire",
+      "wikidata_id": "Q10762848"
+    },
+    "field_mathematics": {
+      "id": "field_mathematics",
+      "type": "Field",
+      "name": "mathematics",
+      "description": "field of study",
+      "wikidata_id": "Q395"
+    },
+    "field_logic": {
+      "id": "field_logic",
+      "type": "Field",
+      "name": "logic",
+      "description": "study of correct reasoning",
+      "wikidata_id": "Q8078"
+    },
+    "field_cryptography": {
+      "id": "field_cryptography",
+      "type": "Field",
+      "name": "cryptography",
+      "description": "practice and study of secure communication techniques",
+      "wikidata_id": "Q8789"
+    },
+    "field_computer_science": {
+      "id": "field_computer_science",
+      "type": "Field",
+      "name": "computer science",
+      "description": "study of computation",
+      "wikidata_id": "Q21198"
+    },
+    "field_cryptanalysis": {
+      "id": "field_cryptanalysis",
+      "type": "Field",
+      "name": "cryptanalysis",
+      "description": "study of analyzing information systems in order to discover their hidden aspects",
+      "wikidata_id": "Q897511"
+    }
+  },
+  "relations": [
+    {
+      "source": "person_alan_turing",
+      "relation": "ADVISED_BY",
+      "target": "person_robin_gandy"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "ADVISED_BY",
+      "target": "person_beatrice_helen_worsley"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "ADVISED_BY",
+      "target": "person_beatrice_helen_worsley"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "RELATED_TO",
+      "target": "person_ethel_sara_stoney",
+      "properties": {
+        "relationship": "mother"
+      }
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "RELATED_TO",
+      "target": "person_julius_mathison_turing",
+      "properties": {
+        "relationship": "father"
+      }
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "ADVISED_BY",
+      "target": "person_robin_gandy"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "ADVISED_BY",
+      "target": "person_robin_gandy"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "ADVISED",
+      "target": "person_gh_hardy"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "ADVISED",
+      "target": "person_robin_gandy"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "RELATED_TO",
+      "target": "person_christopher_morcom",
+      "properties": {
+        "relationship": "partner"
+      }
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "ADVISED_BY",
+      "target": "person_alonzo_church"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "ADVISED_BY",
+      "target": "person_alonzo_church"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "ADVISED_BY",
+      "target": "person_alonzo_church"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "PART_OF",
+      "target": "inst_royal_society"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "WORKED_AT",
+      "target": "inst_guildford"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "WORKED_AT",
+      "target": "inst_atheism"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "WORKED_AT",
+      "target": "inst_wikipedia:list_of_articles_all_languages_should_have"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "EDUCATED_AT",
+      "target": "inst_king's_college"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "EDUCATED_AT",
+      "target": "inst_hazlehurst_community_primary_school"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "EDUCATED_AT",
+      "target": "inst_princeton_university"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "WORKED_AT",
+      "target": "inst_national_physical_laboratory"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "WORKED_AT",
+      "target": "inst_king's_college_cambridge_archive"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "WORKED_AT",
+      "target": "inst_wikiproject_mathematics"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "WORKED_AT",
+      "target": "inst_wiki99/lgbt+"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "WORKED_AT",
+      "target": "inst_sherborne_school"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "DIED_IN",
+      "target": "inst_wilmslow"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "WORKED_AT",
+      "target": "inst_victoria_university_of_manchester"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "WORKED_AT",
+      "target": "inst_government_communications_headquarters"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "WORKED_AT",
+      "target": "inst_wikipedia:vital_articles/level/4"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "WORKED_AT",
+      "target": "inst_university_of_cambridge"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "WORKED_AT",
+      "target": "inst_united_kingdom"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "EDUCATED_AT",
+      "target": "inst_sherborne_school"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "EDUCATED_AT",
+      "target": "inst_princeton_university"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "EDUCATED_AT",
+      "target": "inst_king's_college"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "EDUCATED_AT",
+      "target": "inst_sherborne_school"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "EDUCATED_AT",
+      "target": "inst_hazlehurst_community_primary_school"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "AUTHORED",
+      "target": "pub_turing's_proof"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "AUTHORED",
+      "target": "pub_intelligent_machinery"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_good–turing_frequency_estimation"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_the_annotated_turing"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_alan_turingplein"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_turing"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_turing_completeness"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_computer_scientist"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_alan_turing_year"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_parvis_alan-turing"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_alan_turing_institute"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_alan_turing_centenary_conference"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_alan_turing_building"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_turing+"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_turing_institute"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_church–turing_theorem"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_symmetric_turing_machine"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_alan_turing:_the_enigma"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_turing_jump"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_turing_degree"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_cryptographer"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_turing_machine"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_alan_turing_law"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_type-2_turing_machine"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_bombe"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_turing's_wager"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_turing"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_halting_problem"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_turing's_proof"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_turing_talk"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_turing_switch"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_turingery"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_place_alan_turing"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_alan_turing_institute_almere"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_un_digito_binario_dudoso_recital_para_alan_turing"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_lot_03308"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_turing_house_school"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_alan-turing-allee"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_non-deterministic_turing_machine"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_probabilistic_turing_machine"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_turing"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_universal_turing_machine"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_turing_award"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_turing_college,_kent"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_turing_reduction"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_turing_foundation"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_小行星10204"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_church–turing_thesis"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_intelligent_machinery"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_turing_test"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_turochamp"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_church–turing–deutsch_principle"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "KNOWN_FOR",
+      "target": "concept_turing_machine_with_additional_input"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "RECEIVED",
+      "target": "award_fellow_of_the_royal_society"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "RECEIVED",
+      "target": "award_smith's_prize"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "RECEIVED",
+      "target": "award_officer_of_the_order_of_the_british_empire"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "FIELD_OF_WORK",
+      "target": "field_mathematics"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "FIELD_OF_WORK",
+      "target": "field_logic"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "FIELD_OF_WORK",
+      "target": "field_cryptography"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "FIELD_OF_WORK",
+      "target": "field_computer_science"
+    },
+    {
+      "source": "person_alan_turing",
+      "relation": "FIELD_OF_WORK",
+      "target": "field_cryptanalysis"
+    }
+  ]
+}

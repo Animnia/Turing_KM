@@ -1,0 +1,244 @@
+2026-04-10 13:57:32 [INFO] main: ╔════════════════════════════════════════════════════════╗
+2026-04-10 13:57:32 [INFO] main: ║      图灵知识图谱构建流程 (Turing Knowledge Graph)     ║
+2026-04-10 13:57:32 [INFO] main: ╚════════════════════════════════════════════════════════╝
+2026-04-10 13:57:32 [INFO] main: 执行单步: acquisition
+2026-04-10 13:57:32 [INFO] main: ============================================================
+2026-04-10 13:57:32 [INFO] main: Phase 3: 数据采集 (Data Acquisition)
+2026-04-10 13:57:32 [INFO] main: ============================================================
+2026-04-10 13:57:33 [INFO] src.data_acquisition: === 开始 Wikidata 数据采集 ===
+2026-04-10 13:57:35 [INFO] src.data_acquisition: 获取图灵基本属性: 264 条
+2026-04-10 13:57:36 [INFO] src.data_acquisition: 获取关联人物: 22 条
+2026-04-10 13:57:38 [INFO] src.data_acquisition: 获取关联机构: 19 条
+2026-04-10 13:57:39 [INFO] src.data_acquisition: 获取著作: 2 条
+2026-04-10 13:57:40 [INFO] src.data_acquisition: 获取关联概念: 57 条
+2026-04-10 13:57:41 [INFO] src.data_acquisition: 获取奖项: 3 条
+2026-04-10 13:57:43 [INFO] src.data_acquisition: 获取教育经历: 4 条
+2026-04-10 13:57:44 [INFO] src.data_acquisition: 获取研究领域: 5 条
+2026-04-10 13:57:44 [INFO] src.data_acquisition: Wikidata 数据已保存至 C:\homework\知识图谱\Turing_KM\data\raw\wikidata_turing.json
+2026-04-10 13:57:45 [INFO] src.data_acquisition: === 开始 Wikipedia 文本采集 ===
+2026-04-10 14:03:14 [INFO] main: ╔════════════════════════════════════════════════════════╗
+2026-04-10 14:03:14 [INFO] main: ║      图灵知识图谱构建流程 (Turing Knowledge Graph)     ║
+2026-04-10 14:03:14 [INFO] main: ╚════════════════════════════════════════════════════════╝
+2026-04-10 14:03:14 [INFO] main: 执行单步: acquisition
+2026-04-10 14:03:14 [INFO] main: ============================================================
+2026-04-10 14:03:14 [INFO] main: Phase 3: 数据采集 (Data Acquisition)
+2026-04-10 14:03:14 [INFO] main: ============================================================
+2026-04-10 14:03:15 [INFO] src.data_acquisition: === 开始 Wikidata 数据采集 ===
+2026-04-10 14:03:16 [INFO] src.data_acquisition: 获取图灵基本属性: 264 条
+2026-04-10 14:03:17 [INFO] src.data_acquisition: 获取关联人物: 22 条
+2026-04-10 14:03:20 [INFO] src.data_acquisition: 获取关联机构: 19 条
+2026-04-10 14:03:21 [INFO] src.data_acquisition: 获取著作: 2 条
+2026-04-10 14:03:23 [INFO] src.data_acquisition: 获取关联概念: 57 条
+2026-04-10 14:03:24 [INFO] src.data_acquisition: 获取奖项: 3 条
+2026-04-10 14:03:25 [INFO] src.data_acquisition: 获取教育经历: 4 条
+2026-04-10 14:03:26 [INFO] src.data_acquisition: 获取研究领域: 5 条
+2026-04-10 14:03:26 [INFO] src.data_acquisition: Wikidata 数据已保存至 C:\homework\知识图谱\Turing_KM\data\raw\wikidata_turing.json
+2026-04-10 14:03:27 [INFO] src.data_acquisition: === 开始 Wikipedia 文本采集 ===
+2026-04-10 14:03:29 [INFO] src.data_acquisition: Wikipedia 数据已保存至 C:\homework\知识图谱\Turing_KM\data\raw\wikipedia_turing.json (11 个章节, 60385 字符)
+2026-04-10 14:03:29 [INFO] main: 数据采集完成 - Wikipedia: 11 个章节
+2026-04-10 14:03:29 [INFO] main: ============================================================
+2026-04-10 14:03:29 [INFO] main: 流程完成! 总耗时: 14.5 秒
+2026-04-10 14:03:29 [INFO] main: ============================================================
+2026-04-10 14:04:32 [INFO] main: ╔════════════════════════════════════════════════════════╗
+2026-04-10 14:04:32 [INFO] main: ║      图灵知识图谱构建流程 (Turing Knowledge Graph)     ║
+2026-04-10 14:04:32 [INFO] main: ╚════════════════════════════════════════════════════════╝
+2026-04-10 14:04:32 [INFO] main: 执行单步: extraction
+2026-04-10 14:04:32 [INFO] main: ============================================================
+2026-04-10 14:04:32 [INFO] main: Phase 4: 知识抽取 (Knowledge Extraction)
+2026-04-10 14:04:32 [INFO] main: ============================================================
+2026-04-10 14:04:40 [INFO] src.knowledge_extraction: === 开始解析 Wikidata 结构化数据 ===
+2026-04-10 14:04:40 [INFO] src.knowledge_extraction: Wikidata 解析完成: 92 个实体, 97 条关系
+2026-04-10 14:04:40 [INFO] src.knowledge_extraction: === 开始 DeepSeek API 知识抽取 ===
+2026-04-10 14:04:41 [INFO] src.knowledge_extraction: [1/11] 正在抽取章节: Introduction (3537 字符)
+2026-04-10 14:04:45 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-04-10 14:06:00 [INFO] src.knowledge_extraction:   → 抽取到 26 个实体, 24 条关系
+2026-04-10 14:06:01 [INFO] src.knowledge_extraction: [2/11] 正在抽取章节: Early life and education (8000 字符)
+2026-04-10 14:06:02 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-04-10 14:07:29 [WARNING] src.knowledge_extraction:   → 章节 'Early life and education' JSON 解析失败: Unterminated string starting at: line 553 column 17 (char 18882)
+2026-04-10 14:07:30 [INFO] src.knowledge_extraction: [3/11] 正在抽取章节: Career and research (8000 字符)
+2026-04-10 14:07:30 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-04-10 14:08:57 [WARNING] src.knowledge_extraction:   → 章节 'Career and research' JSON 解析失败: Unterminated string starting at: line 502 column 25 (char 18893)
+2026-04-10 14:08:58 [INFO] src.knowledge_extraction: [4/11] 正在抽取章节: Personal life (4112 字符)
+2026-04-10 14:08:58 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-04-10 14:10:09 [INFO] src.knowledge_extraction:   → 抽取到 22 个实体, 26 条关系
+2026-04-10 14:10:10 [INFO] src.knowledge_extraction: [5/11] 正在抽取章节: Death (4785 字符)
+2026-04-10 14:10:10 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-04-10 14:11:14 [INFO] main: ╔════════════════════════════════════════════════════════╗
+2026-04-10 14:11:14 [INFO] main: ║      图灵知识图谱构建流程 (Turing Knowledge Graph)     ║
+2026-04-10 14:11:14 [INFO] main: ╚════════════════════════════════════════════════════════╝
+2026-04-10 14:11:14 [INFO] main: 执行单步: extraction
+2026-04-10 14:11:14 [INFO] main: ============================================================
+2026-04-10 14:11:14 [INFO] main: Phase 4: 知识抽取 (Knowledge Extraction)
+2026-04-10 14:11:14 [INFO] main: ============================================================
+2026-04-10 14:11:15 [INFO] src.knowledge_extraction: === 开始解析 Wikidata 结构化数据 ===
+2026-04-10 14:11:15 [INFO] src.knowledge_extraction: Wikidata 解析完成: 92 个实体, 97 条关系
+2026-04-10 14:11:15 [INFO] src.knowledge_extraction: === 开始 DeepSeek API 知识抽取 ===
+2026-04-10 14:11:16 [INFO] src.knowledge_extraction: [1/11] 正在抽取章节: Introduction (3537 字符)
+2026-04-10 14:11:16 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-04-10 14:12:17 [INFO] src.knowledge_extraction:   → 抽取到 20 个实体, 20 条关系
+2026-04-10 14:12:18 [INFO] src.knowledge_extraction: [2/11] 正在抽取章节: Early life and education (4000 字符)
+2026-04-10 14:12:19 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-04-10 14:13:09 [INFO] src.knowledge_extraction:   → 抽取到 20 个实体, 16 条关系
+2026-04-10 14:13:10 [INFO] src.knowledge_extraction: [3/11] 正在抽取章节: Career and research (4000 字符)
+2026-04-10 14:13:11 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-04-10 14:14:43 [INFO] src.knowledge_extraction:   → 抽取到 31 个实体, 29 条关系
+2026-04-10 14:14:44 [INFO] src.knowledge_extraction: [4/11] 正在抽取章节: Personal life (4000 字符)
+2026-04-10 14:14:44 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-04-10 14:15:23 [INFO] src.knowledge_extraction:   → 抽取到 14 个实体, 11 条关系
+2026-04-10 14:15:24 [INFO] src.knowledge_extraction: [5/11] 正在抽取章节: Death (4000 字符)
+2026-04-10 14:15:24 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-04-10 14:16:19 [INFO] src.knowledge_extraction:   → 抽取到 20 个实体, 15 条关系
+2026-04-10 14:16:20 [INFO] src.knowledge_extraction: [6/11] 正在抽取章节: Government apology and pardon (4000 字符)
+2026-04-10 14:16:20 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-04-10 14:17:24 [INFO] src.knowledge_extraction:   → 抽取到 20 个实体, 20 条关系
+2026-04-10 14:17:25 [INFO] src.knowledge_extraction: [7/11] 正在抽取章节: Further reading (4000 字符)
+2026-04-10 14:17:25 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-04-10 14:18:30 [INFO] src.knowledge_extraction:   → 抽取到 20 个实体, 20 条关系
+2026-04-10 14:18:31 [INFO] src.knowledge_extraction: [8/11] 正在抽取章节: See also (152 字符)
+2026-04-10 14:18:31 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-04-10 14:18:49 [INFO] src.knowledge_extraction:   → 抽取到 7 个实体, 6 条关系
+2026-04-10 14:18:50 [INFO] src.knowledge_extraction: 跳过章节 'Notes' (文本过短: 0 字符)
+2026-04-10 14:18:50 [INFO] src.knowledge_extraction: 跳过章节 'References' (文本过短: 0 字符)
+2026-04-10 14:18:50 [INFO] src.knowledge_extraction: [11/11] 正在抽取章节: External links (1443 字符)
+2026-04-10 14:18:50 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-04-10 14:19:55 [INFO] src.knowledge_extraction:   → 抽取到 20 个实体, 18 条关系
+2026-04-10 14:19:56 [INFO] src.knowledge_extraction: DeepSeek 抽取完成: 153 个实体, 155 条关系
+2026-04-10 14:19:56 [INFO] main: 知识抽取完成 - Wikidata: 92实体/97关系, DeepSeek: 153实体/155关系
+2026-04-10 14:19:56 [INFO] main: ============================================================
+2026-04-10 14:19:56 [INFO] main: 流程完成! 总耗时: 522.2 秒
+2026-04-10 14:19:56 [INFO] main: ============================================================
+2026-04-10 14:20:13 [INFO] main: ╔════════════════════════════════════════════════════════╗
+2026-04-10 14:20:13 [INFO] main: ║      图灵知识图谱构建流程 (Turing Knowledge Graph)     ║
+2026-04-10 14:20:13 [INFO] main: ╚════════════════════════════════════════════════════════╝
+2026-04-10 14:20:13 [INFO] main: 执行单步: fusion
+2026-04-10 14:20:13 [INFO] main: ============================================================
+2026-04-10 14:20:13 [INFO] main: Phase 5: 知识融合 (Knowledge Fusion)
+2026-04-10 14:20:13 [INFO] main: ============================================================
+2026-04-10 14:20:13 [INFO] src.knowledge_fusion: ========== 知识融合流程开始 ==========
+2026-04-10 14:20:13 [INFO] src.knowledge_fusion: === 开始实体对齐 ===
+2026-04-10 14:20:13 [INFO] src.knowledge_fusion: 实体对齐完成: 对齐 45 个, 新增 108 个, 合并后共 200 个实体
+2026-04-10 14:20:13 [INFO] src.knowledge_fusion: === 开始关系融合 ===
+2026-04-10 14:20:13 [INFO] src.knowledge_fusion: 关系融合完成: 共 195 条唯一关系
+2026-04-10 14:20:13 [INFO] src.knowledge_fusion: === 开始实体清洗 ===
+2026-04-10 14:20:13 [INFO] src.knowledge_fusion: 实体清洗完成: 200 → 200 个实体
+2026-04-10 14:20:13 [INFO] src.knowledge_fusion: === 开始质量检查 ===
+2026-04-10 14:20:13 [INFO] src.knowledge_fusion: 质量检查结果:
+2026-04-10 14:20:13 [INFO] src.knowledge_fusion:   实体总数: 200
+2026-04-10 14:20:13 [INFO] src.knowledge_fusion:   关系总数: 195
+2026-04-10 14:20:13 [INFO] src.knowledge_fusion:   实体类型分布: {'Person': 66, 'Institution': 34, 'Publication': 5, 'Concept': 65, 'Award': 4, 'Field': 7, 'Place': 11, 'Event': 8}
+2026-04-10 14:20:13 [INFO] src.knowledge_fusion:   关系类型分布: {'ADVISED_BY': 3, 'RELATED_TO': 9, 'PART_OF': 5, 'WORKED_AT': 22, 'EDUCATED_AT': 7, 'DIED_IN': 1, 'AUTHORED': 10, 'KNOWN_FOR': 54, 'RECEIVED': 4, 'FIELD_OF_WORK': 7, 'BORN_IN': 1, 'PARTICIPATED_IN': 29, 'CONTRIBUTED_TO': 18, 'LOCATED_IN': 11, 'INFLUENCED': 2, 'COLLABORATED_WITH': 8, 'INFLUENCED_BY': 1, 'ABOUT': 3}
+2026-04-10 14:20:13 [INFO] src.knowledge_fusion:   孤立节点: 35
+2026-04-10 14:20:13 [INFO] src.knowledge_fusion: 最终数据已保存至 C:\homework\知识图谱\Turing_KM\data\processed\final_triples.json
+2026-04-10 14:20:13 [INFO] src.knowledge_fusion: ========== 知识融合流程完成 ==========
+2026-04-10 14:20:13 [INFO] main: 知识融合完成 - 实体: 200, 关系: 195, 孤立节点: 35
+2026-04-10 14:20:13 [INFO] main: ============================================================
+2026-04-10 14:20:13 [INFO] main: 流程完成! 总耗时: 0.1 秒
+2026-04-10 14:20:13 [INFO] main: ============================================================
+2026-04-10 14:30:35 [INFO] main: ╔════════════════════════════════════════════════════════╗
+2026-04-10 14:30:35 [INFO] main: ║      图灵知识图谱构建流程 (Turing Knowledge Graph)     ║
+2026-04-10 14:30:35 [INFO] main: ╚════════════════════════════════════════════════════════╝
+2026-04-10 14:30:35 [INFO] main: 执行单步: visualize
+2026-04-10 14:30:35 [INFO] main: ============================================================
+2026-04-10 14:30:35 [INFO] main: Phase 8: 可视化 (Visualization)
+2026-04-10 14:30:35 [INFO] main: ============================================================
+2026-04-10 14:30:45 [INFO] src.visualization: ========== 可视化流程开始 ==========
+2026-04-10 14:30:57 [INFO] src.visualization: Neo4j 不可用 (Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] 由于目标计算机积极拒绝，无法连接。)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] 由于目标计算机积极拒绝，无法连接。))，从 JSON 文件加载
+2026-04-10 14:30:57 [INFO] src.visualization: NetworkX 图构建完成: 200 节点, 177 边
+2026-04-10 14:30:57 [INFO] src.visualization: === 生成 Pyvis 可视化 ===
+2026-04-10 14:31:59 [INFO] main: ╔════════════════════════════════════════════════════════╗
+2026-04-10 14:31:59 [INFO] main: ║      图灵知识图谱构建流程 (Turing Knowledge Graph)     ║
+2026-04-10 14:31:59 [INFO] main: ╚════════════════════════════════════════════════════════╝
+2026-04-10 14:31:59 [INFO] main: 执行单步: visualize
+2026-04-10 14:31:59 [INFO] main: ============================================================
+2026-04-10 14:31:59 [INFO] main: Phase 8: 可视化 (Visualization)
+2026-04-10 14:31:59 [INFO] main: ============================================================
+2026-04-10 14:31:59 [INFO] src.visualization: ========== 可视化流程开始 ==========
+2026-04-10 14:32:04 [INFO] src.visualization: Neo4j 不可用 (Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] 由于目标计算机积极拒绝，无法连接。)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] 由于目标计算机积极拒绝，无法连接。))，从 JSON 文件加载
+2026-04-10 14:32:04 [INFO] src.visualization: NetworkX 图构建完成: 200 节点, 177 边
+2026-04-10 14:32:04 [INFO] src.visualization: === 生成 Pyvis 可视化 ===
+2026-04-10 14:32:04 [INFO] src.visualization: 可视化已保存至: C:\homework\知识图谱\Turing_KM\output\turing_kg.html
+2026-04-10 14:32:04 [INFO] src.visualization: ========== 可视化流程完成 ==========
+2026-04-10 14:32:04 [INFO] main: 可视化完成 - 文件: C:\homework\知识图谱\Turing_KM\output\turing_kg.html
+2026-04-10 14:32:04 [INFO] main: ============================================================
+2026-04-10 14:32:04 [INFO] main: 流程完成! 总耗时: 5.5 秒
+2026-04-10 14:32:04 [INFO] main: ============================================================
+2026-04-10 14:35:23 [INFO] main: ╔════════════════════════════════════════════════════════╗
+2026-04-10 14:35:23 [INFO] main: ║      图灵知识图谱构建流程 (Turing Knowledge Graph)     ║
+2026-04-10 14:35:23 [INFO] main: ╚════════════════════════════════════════════════════════╝
+2026-04-10 14:35:23 [INFO] main: 执行单步: visualize
+2026-04-10 14:35:23 [INFO] main: ============================================================
+2026-04-10 14:35:23 [INFO] main: Phase 8: 可视化 (Visualization)
+2026-04-10 14:35:23 [INFO] main: ============================================================
+2026-04-10 14:35:24 [INFO] src.visualization: ========== 可视化流程开始 ==========
+2026-04-10 14:35:29 [INFO] src.visualization: Neo4j 不可用 (Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] 由于目标计算机积极拒绝，无法连接。)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] 由于目标计算机积极拒绝，无法连接。))，从 JSON 文件加载
+2026-04-10 14:35:29 [INFO] src.visualization: NetworkX 图构建完成: 200 节点, 177 边
+2026-04-10 14:35:29 [INFO] src.visualization: === 生成 Pyvis 可视化 ===
+2026-04-10 14:35:29 [INFO] src.visualization: 可视化已保存至: C:\homework\知识图谱\Turing_KM\output\turing_kg.html
+2026-04-10 14:35:29 [INFO] src.visualization: ========== 可视化流程完成 ==========
+2026-04-10 14:35:29 [INFO] main: 可视化完成 - 文件: C:\homework\知识图谱\Turing_KM\output\turing_kg.html
+2026-04-10 14:35:29 [INFO] main: ============================================================
+2026-04-10 14:35:29 [INFO] main: 流程完成! 总耗时: 5.5 秒
+2026-04-10 14:35:29 [INFO] main: ============================================================
+2026-04-10 14:38:27 [INFO] main: ╔════════════════════════════════════════════════════════╗
+2026-04-10 14:38:27 [INFO] main: ║      图灵知识图谱构建流程 (Turing Knowledge Graph)     ║
+2026-04-10 14:38:27 [INFO] main: ╚════════════════════════════════════════════════════════╝
+2026-04-10 14:38:27 [INFO] main: 执行单步: visualize
+2026-04-10 14:38:27 [INFO] main: ============================================================
+2026-04-10 14:38:27 [INFO] main: Phase 8: 可视化 (Visualization)
+2026-04-10 14:38:27 [INFO] main: ============================================================
+2026-04-10 14:38:28 [INFO] src.visualization: ========== 可视化流程开始 ==========
+2026-04-10 14:38:32 [INFO] src.visualization: Neo4j 不可用 (Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] 由于目标计算机积极拒绝，无法连接。)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] 由于目标计算机积极拒绝，无法连接。))，从 JSON 文件加载
+2026-04-10 14:38:32 [INFO] src.visualization: NetworkX 图构建完成: 200 节点, 177 边
+2026-04-10 14:38:32 [INFO] src.visualization: === 生成 Pyvis 可视化 ===
+2026-04-10 14:38:33 [INFO] src.visualization: 可视化已保存至: C:\homework\知识图谱\Turing_KM\output\turing_kg.html
+2026-04-10 14:38:33 [INFO] src.visualization: ========== 可视化流程完成 ==========
+2026-04-10 14:38:33 [INFO] main: 可视化完成 - 文件: C:\homework\知识图谱\Turing_KM\output\turing_kg.html
+2026-04-10 14:38:33 [INFO] main: ============================================================
+2026-04-10 14:38:33 [INFO] main: 流程完成! 总耗时: 5.4 秒
+2026-04-10 14:38:33 [INFO] main: ============================================================
+2026-04-10 14:41:55 [INFO] main: ╔════════════════════════════════════════════════════════╗
+2026-04-10 14:41:55 [INFO] main: ║      图灵知识图谱构建流程 (Turing Knowledge Graph)     ║
+2026-04-10 14:41:55 [INFO] main: ╚════════════════════════════════════════════════════════╝
+2026-04-10 14:41:55 [INFO] main: 执行单步: visualize
+2026-04-10 14:41:55 [INFO] main: ============================================================
+2026-04-10 14:41:55 [INFO] main: Phase 8: 可视化 (Visualization)
+2026-04-10 14:41:55 [INFO] main: ============================================================
+2026-04-10 14:41:56 [INFO] src.visualization: ========== 可视化流程开始 ==========
+2026-04-10 14:42:00 [INFO] src.visualization: Neo4j 不可用 (Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] 由于目标计算机积极拒绝，无法连接。)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] 由于目标计算机积极拒绝，无法连接。))，从 JSON 文件加载
+2026-04-10 14:42:00 [INFO] src.visualization: NetworkX 图构建完成: 200 节点, 177 边
+2026-04-10 14:42:00 [INFO] src.visualization: === 生成 Pyvis 可视化 ===
+2026-04-10 14:42:00 [INFO] src.visualization: 可视化已保存至: C:\homework\知识图谱\Turing_KM\output\turing_kg.html
+2026-04-10 14:42:00 [INFO] src.visualization: ========== 可视化流程完成 ==========
+2026-04-10 14:42:00 [INFO] main: 可视化完成 - 文件: C:\homework\知识图谱\Turing_KM\output\turing_kg.html
+2026-04-10 14:42:00 [INFO] main: ============================================================
+2026-04-10 14:42:00 [INFO] main: 流程完成! 总耗时: 5.5 秒
+2026-04-10 14:42:00 [INFO] main: ============================================================
+2026-04-10 14:44:07 [INFO] main: ╔════════════════════════════════════════════════════════╗
+2026-04-10 14:44:07 [INFO] main: ║      图灵知识图谱构建流程 (Turing Knowledge Graph)     ║
+2026-04-10 14:44:07 [INFO] main: ╚════════════════════════════════════════════════════════╝
+2026-04-10 14:44:07 [INFO] main: 执行单步: visualize
+2026-04-10 14:44:07 [INFO] main: ============================================================
+2026-04-10 14:44:07 [INFO] main: Phase 8: 可视化 (Visualization)
+2026-04-10 14:44:07 [INFO] main: ============================================================
+2026-04-10 14:44:08 [INFO] src.visualization: ========== 可视化流程开始 ==========
+2026-04-10 14:44:12 [INFO] src.visualization: Neo4j 不可用 (Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] 由于目标计算机积极拒绝，无法连接。)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] 由于目标计算机积极拒绝，无法连接。))，从 JSON 文件加载
+2026-04-10 14:44:12 [INFO] src.visualization: NetworkX 图构建完成: 200 节点, 177 边
+2026-04-10 14:44:12 [INFO] src.visualization: === 生成 Pyvis 可视化 ===
+2026-04-10 14:44:13 [INFO] src.visualization: 可视化已保存至: C:\homework\知识图谱\Turing_KM\output\turing_kg.html
+2026-04-10 14:44:13 [INFO] src.visualization: ========== 可视化流程完成 ==========
+2026-04-10 14:44:13 [INFO] main: 可视化完成 - 文件: C:\homework\知识图谱\Turing_KM\output\turing_kg.html
+2026-04-10 14:44:13 [INFO] main: ============================================================
+2026-04-10 14:44:13 [INFO] main: 流程完成! 总耗时: 5.5 秒
+2026-04-10 14:44:13 [INFO] main: ============================================================
