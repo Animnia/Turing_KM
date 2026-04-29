@@ -2,6 +2,7 @@
 
 import json
 import logging
+import re
 import time
 
 from openai import OpenAI
@@ -13,7 +14,7 @@ from src.config import (
     DEEPSEEK_BASE_URL,
     DEEPSEEK_MODEL,
 )
-from src.ontology import get_ontology_prompt_description
+from src.ontology import ENTITY_TYPES, RELATION_TYPES, get_ontology_prompt_description
 
 logger = logging.getLogger(__name__)
 
@@ -404,6 +405,116 @@ def _repair_truncated_json(content: str) -> dict:
     return result
 
 
+# ============================================================
+# Schema 校验与脏数据过滤
+# ============================================================
+
+# 名称黑名单（不区分大小写的子串）：明显是维基元数据/管理页面
+_NAME_BLACKLIST_PATTERNS = [
+    r"\bwikipedia\b",
+    r"wikiproject",
+    r"wiki99",
+    r"^category[: ]",
+    r"^template[: ]",
+    r"^portal[: ]",
+    r"^help[: ]",
+    r"^talk[: ]",
+    r"^user[: ]",
+    r"^file[: ]",
+    r"main page",
+    r"disambiguation",
+]
+
+# 类型相关的精细黑名单：(规范化名称, 类型) → 丢弃
+_TYPED_NAME_BLACKLIST = {
+    ("atheism", "Institution"),
+    ("turing", "Concept"),  # 纯名为 "Turing" 的概念多为编程语言/无关
+}
+
+_BLACKLIST_RE = re.compile("|".join(_NAME_BLACKLIST_PATTERNS), re.IGNORECASE)
+
+
+def _validate_extracted(extracted: dict) -> dict:
+    """对 LLM 抽取结果做 schema 校验和黑名单过滤。
+
+    - 实体类型必须在 ENTITY_TYPES 内
+    - 实体名称不能命中黑名单
+    - 关系类型必须在 RELATION_TYPES 内
+    - 丢弃引用了被删除实体的关系
+    """
+    raw_entities = extracted.get("entities", {}) or {}
+    raw_relations = extracted.get("relations", []) or []
+
+    # 兼容 dict 或 list
+    if isinstance(raw_entities, list):
+        ent_iter = raw_entities
+    else:
+        ent_iter = raw_entities.values()
+
+    valid_entities = {}
+    dropped_entities = 0
+    dropped_blacklist = 0
+    dropped_type = 0
+
+    for entity in ent_iter:
+        eid = entity.get("id", "")
+        etype = entity.get("type", "")
+        name = (entity.get("name") or "").strip()
+
+        if not eid or not name:
+            dropped_entities += 1
+            continue
+
+        if etype not in ENTITY_TYPES:
+            dropped_type += 1
+            continue
+
+        # 名称黑名单
+        norm = name.strip().lower()
+        if _BLACKLIST_RE.search(name):
+            dropped_blacklist += 1
+            continue
+        if (norm, etype) in _TYPED_NAME_BLACKLIST:
+            dropped_blacklist += 1
+            continue
+        # 名称过短或纯标点
+        if len(re.sub(r"[\W_]+", "", name)) < 2:
+            dropped_blacklist += 1
+            continue
+
+        valid_entities[eid] = entity
+
+    valid_ids = set(valid_entities.keys())
+    valid_relations = []
+    dropped_rel_type = 0
+    dropped_rel_ref = 0
+
+    for rel in raw_relations:
+        rtype = rel.get("relation", "")
+        src = rel.get("source", "")
+        tgt = rel.get("target", "")
+        if rtype not in RELATION_TYPES:
+            dropped_rel_type += 1
+            continue
+        if src not in valid_ids or tgt not in valid_ids:
+            dropped_rel_ref += 1
+            continue
+        if src == tgt:
+            continue
+        valid_relations.append(rel)
+
+    logger.info(
+        "Schema 校验: 实体 %d→%d (类型不合法 %d, 黑名单 %d, 缺字段 %d); "
+        "关系 %d→%d (类型不合法 %d, 引用缺失 %d)",
+        len(raw_entities), len(valid_entities),
+        dropped_type, dropped_blacklist, dropped_entities,
+        len(raw_relations), len(valid_relations),
+        dropped_rel_type, dropped_rel_ref,
+    )
+
+    return {"entities": valid_entities, "relations": valid_relations}
+
+
 def extract_from_text_llm(sections: list[dict]) -> dict:
     """使用 DeepSeek API 从 Wikipedia 文本中抽取知识"""
     logger.info("=== 开始 DeepSeek API 知识抽取 ===")
@@ -478,6 +589,9 @@ def extract_from_text_llm(sections: list[dict]) -> dict:
         time.sleep(1)
 
     result = {"entities": all_entities, "relations": all_relations}
+
+    # Schema 校验与脏数据过滤
+    result = _validate_extracted(result)
 
     output_path = DATA_PROCESSED_DIR / "extracted_triples.json"
     with open(output_path, "w", encoding="utf-8") as f:
