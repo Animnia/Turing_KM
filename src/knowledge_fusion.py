@@ -4,11 +4,51 @@ import json
 import logging
 import re
 from collections import defaultdict
+from difflib import SequenceMatcher
 
 from src.config import DATA_PROCESSED_DIR
 from src.ontology import ENTITY_TYPES, RELATION_TYPES
 
 logger = logging.getLogger(__name__)
+
+# 实体名称模糊匹配阈值（同类型内）
+_FUZZY_NAME_THRESHOLD = 0.88
+
+# 名称黑名单（不区分大小写的子串）：明显是维基元数据/管理页面
+_NAME_BLACKLIST_PATTERNS = [
+    r"\bwikipedia\b",
+    r"wikiproject",
+    r"wiki99",
+    r"^category[: ]",
+    r"^template[: ]",
+    r"^portal[: ]",
+    r"^help[: ]",
+    r"^talk[: ]",
+    r"^user[: ]",
+    r"^file[: ]",
+    r"main page",
+    r"disambiguation",
+]
+_BLACKLIST_RE = re.compile("|".join(_NAME_BLACKLIST_PATTERNS), re.IGNORECASE)
+# (规范化名称, 类型) → 丢弃
+_TYPED_NAME_BLACKLIST = {
+    ("atheism", "Institution"),
+    ("turing", "Concept"),
+}
+
+
+def _is_blacklisted(name: str, etype: str) -> bool:
+    """统一的实体黑名单判断，供 Wikidata 与 LLM 抽取共用。"""
+    if not name:
+        return True
+    if _BLACKLIST_RE.search(name):
+        return True
+    norm = name.strip().lower()
+    if (norm, etype) in _TYPED_NAME_BLACKLIST:
+        return True
+    if len(re.sub(r"[\W_]+", "", name)) < 2:
+        return True
+    return False
 
 
 # ============================================================
@@ -85,7 +125,14 @@ def _build_name_index(entities: dict) -> dict:
 
 
 def align_entities(wikidata_entities: dict, extracted_entities: dict) -> dict:
-    """对齐 Wikidata 和 DeepSeek 抽取的实体"""
+    """对齐 Wikidata 和 DeepSeek 抽取的实体。
+
+    优先级（高 → 低）:
+      1) wikidata_id (QID) 完全相同 → 直接合并
+      2) 归一化名称完全一致 + 实体类型相同 → 合并
+      3) 归一化名称模糊相似度 ≥ 阈值 + 实体类型相同 → 合并
+      4) 否则作为新实体加入
+    """
     logger.info("=== 开始实体对齐 ===")
 
     # Wikidata 数据作为基准
@@ -93,36 +140,75 @@ def align_entities(wikidata_entities: dict, extracted_entities: dict) -> dict:
     for eid, entity in wikidata_entities.items():
         merged[eid] = {**entity}
 
-    # 构建 Wikidata 实体名称索引
-    name_index = _build_name_index(merged)
+    # 索引: QID → eid
+    qid_index = {}
+    # 索引: (norm_name, type) → eid
+    typed_name_index = {}
+    # 索引: type → list[(norm_name, eid)] 用于模糊匹配
+    type_to_names = defaultdict(list)
 
-    # 逐个处理 DeepSeek 抽取的实体
-    id_mapping = {}  # old_id → new_id (对齐映射)
+    for eid, entity in merged.items():
+        qid = entity.get("wikidata_id", "")
+        etype = entity.get("type", "")
+        norm = _normalize_name(entity.get("name", ""))
+        if qid:
+            qid_index[qid] = eid
+        if norm and etype:
+            typed_name_index[(norm, etype)] = eid
+            type_to_names[etype].append((norm, eid))
+            # 中文名也建索引
+            norm_zh = _normalize_name(entity.get("name_zh", ""))
+            if norm_zh:
+                typed_name_index[(norm_zh, etype)] = eid
+
+    id_mapping = {}
     new_count = 0
-    aligned_count = 0
+    aligned_qid = 0
+    aligned_exact = 0
+    aligned_fuzzy = 0
+    aligned_id = 0
 
     for eid, entity in extracted_entities.items():
         name = entity.get("name", "")
         norm_name = _normalize_name(name)
+        etype = entity.get("type", "")
+        qid = entity.get("wikidata_id", "")
 
-        # 尝试匹配
         matched_id = None
+        match_via = None
 
-        # 精确匹配
-        if norm_name in name_index:
-            matched_id = name_index[norm_name][0]
+        # 0) 实体 ID 已存在于基准（多由 prompt 中固定的规范 ID 触发）
+        if eid in merged:
+            matched_id = eid
+            match_via = "id"
 
-        # 子串匹配
-        if not matched_id:
-            for existing_name, existing_ids in name_index.items():
-                if norm_name and existing_name and (
-                    norm_name in existing_name or existing_name in norm_name
-                ):
-                    matched_id = existing_ids[0]
-                    break
+        # 1) QID 精确匹配
+        if not matched_id and qid and qid in qid_index:
+            matched_id = qid_index[qid]
+            match_via = "qid"
+
+        # 2) (归一化名称, 类型) 精确匹配
+        if not matched_id and norm_name and etype:
+            matched_id = typed_name_index.get((norm_name, etype))
+            if matched_id:
+                match_via = "exact"
+
+        # 3) 同类型内的模糊相似度匹配
+        if not matched_id and norm_name and etype and etype in type_to_names:
+            best_id = None
+            best_ratio = 0.0
+            for cand_norm, cand_id in type_to_names[etype]:
+                if not cand_norm:
+                    continue
+                ratio = SequenceMatcher(None, norm_name, cand_norm).ratio()
+                if ratio > best_ratio:
+                    best_ratio = ratio
+                    best_id = cand_id
+            if best_id and best_ratio >= _FUZZY_NAME_THRESHOLD:
+                matched_id = best_id
+                match_via = f"fuzzy({best_ratio:.2f})"
 
         if matched_id:
-            # 对齐成功 - 合并属性（不覆盖已有的非空属性）
             id_mapping[eid] = matched_id
             existing = merged[matched_id]
             for k, v in entity.items():
@@ -130,24 +216,35 @@ def align_entities(wikidata_entities: dict, extracted_entities: dict) -> dict:
                     continue
                 if v and (k not in existing or not existing.get(k)):
                     existing[k] = v
-            aligned_count += 1
+            if match_via == "qid":
+                aligned_qid += 1
+            elif match_via == "exact":
+                aligned_exact += 1
+            elif match_via == "id":
+                aligned_id += 1
+            else:
+                aligned_fuzzy += 1
         else:
-            # 无匹配 - 作为新实体加入
             entity_type = entity.get("type", "Concept")
             new_id = _generate_entity_id(entity_type, name)
-            # 避免 ID 冲突
             if new_id in merged:
                 new_id = f"{new_id}_{new_count}"
             entity["id"] = new_id
             merged[new_id] = entity
             id_mapping[eid] = new_id
             new_count += 1
-            # 更新名称索引
-            if norm_name:
-                name_index.setdefault(norm_name, []).append(new_id)
+            # 更新索引以便后续抽取实体相互对齐
+            if norm_name and entity_type:
+                typed_name_index[(norm_name, entity_type)] = new_id
+                type_to_names[entity_type].append((norm_name, new_id))
+            new_qid = entity.get("wikidata_id", "")
+            if new_qid:
+                qid_index[new_qid] = new_id
 
-    logger.info("实体对齐完成: 对齐 %d 个, 新增 %d 个, 合并后共 %d 个实体",
-                aligned_count, new_count, len(merged))
+    logger.info(
+        "实体对齐完成: ID 对齐 %d, QID 对齐 %d, 精确名 %d, 模糊名 %d, 新增 %d, 合并后共 %d 个实体",
+        aligned_id, aligned_qid, aligned_exact, aligned_fuzzy, new_count, len(merged),
+    )
 
     return merged, id_mapping
 
@@ -220,6 +317,40 @@ def merge_relations(
 # ============================================================
 
 
+def _flatten_for_neo4j(entity: dict) -> dict:
+    """将实体属性展平/规范化为 Neo4j 支持的原语类型。
+
+    - 嵌套 dict 'properties' 里的字段提升到顶层（不覆盖已有非空字段）
+    - 其余非原语类型转为字符串 / 丢弃
+    """
+    nested = entity.pop("properties", None)
+    if isinstance(nested, dict):
+        for k, v in nested.items():
+            if k in entity and entity.get(k):
+                continue
+            entity[k] = v
+    out = {}
+    for k, v in entity.items():
+        if v is None:
+            continue
+        if isinstance(v, (str, int, float, bool)):
+            out[k] = v
+        elif isinstance(v, list):
+            # 仅保留原语数组
+            prim = [x for x in v if isinstance(x, (str, int, float, bool))]
+            if prim:
+                out[k] = prim
+        elif isinstance(v, dict):
+            # 二次嵌套：序列化为字符串
+            try:
+                out[k] = json.dumps(v, ensure_ascii=False)
+            except Exception:
+                pass
+        else:
+            out[k] = str(v)
+    return out
+
+
 def clean_entities(entities: dict) -> dict:
     """清洗实体数据"""
     logger.info("=== 开始实体清洗 ===")
@@ -248,6 +379,9 @@ def clean_entities(entities: dict) -> dict:
 
         # 确保 id 一致
         entity["id"] = eid
+
+        # 展平嵌套属性 + 仅保留 Neo4j 支持的原语类型
+        entity = _flatten_for_neo4j(entity)
 
         # 去除空属性
         cleaned[eid] = {k: v for k, v in entity.items() if v}
@@ -328,6 +462,28 @@ def fuse_all() -> dict:
     wikidata_relations = wikidata_data.get("relations", [])
     extracted_entities = extracted_data.get("entities", {})
     extracted_relations = extracted_data.get("relations", [])
+
+    # 对两个数据源应用统一的黑名单过滤（防止 wikipedia 元数据/atheism 等脏条进入图谱）
+    def _filter_blacklist(entities: dict, relations: list, source_name: str):
+        bad_ids = {
+            eid for eid, e in entities.items()
+            if _is_blacklisted(e.get("name", ""), e.get("type", ""))
+        }
+        if bad_ids:
+            logger.info("[%s] 黑名单过滤: 删除 %d 个实体", source_name, len(bad_ids))
+        clean_entities = {k: v for k, v in entities.items() if k not in bad_ids}
+        clean_relations = [
+            r for r in relations
+            if r.get("source") not in bad_ids and r.get("target") not in bad_ids
+        ]
+        return clean_entities, clean_relations
+
+    wikidata_entities, wikidata_relations = _filter_blacklist(
+        wikidata_entities, wikidata_relations, "Wikidata"
+    )
+    extracted_entities, extracted_relations = _filter_blacklist(
+        extracted_entities, extracted_relations, "LLM"
+    )
 
     # Step 1: 实体对齐
     merged_entities, id_mapping = align_entities(wikidata_entities, extracted_entities)
