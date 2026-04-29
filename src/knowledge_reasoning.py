@@ -1,10 +1,11 @@
 """知识推理与查询模块 - 基于 Cypher 的推理规则和查询示例"""
 
+import json
 import logging
 
 from neo4j import GraphDatabase
 
-from src.config import NEO4J_PASSWORD, NEO4J_URI, NEO4J_USER
+from src.config import DATA_PROCESSED_DIR, NEO4J_PASSWORD, NEO4J_URI, NEO4J_USER
 
 logger = logging.getLogger(__name__)
 
@@ -92,6 +93,27 @@ class KnowledgeReasoner:
         total = sum(results.values())
         logger.info("推理完成: 共新增 %d 条推理关系", total)
         return results
+
+    def export_inferred_relations(self) -> list:
+        """导出所有推理生成的关系到列表（properties.inferred=true）"""
+        query = """
+        MATCH (s)-[r]->(t)
+        WHERE r.inferred = true
+        RETURN s.id AS source, type(r) AS relation, t.id AS target
+        """
+        rels = self._run_query(query)
+        out = [
+            {
+                "source": r["source"],
+                "relation": r["relation"],
+                "target": r["target"],
+                "properties": {"inferred": True},
+            }
+            for r in rels
+            if r["source"] and r["target"]
+        ]
+        logger.info("导出推理关系: %d 条", len(out))
+        return out
 
     # ============================================================
     # 查询示例
@@ -190,6 +212,13 @@ def reason_all() -> dict:
     try:
         # 执行推理
         inference_results = reasoner.run_all_inferences()
+
+        # 导出推理关系到 JSON（供可视化在无 Neo4j 时使用）
+        inferred = reasoner.export_inferred_relations()
+        out_path = DATA_PROCESSED_DIR / "inferred_triples.json"
+        with open(out_path, "w", encoding="utf-8") as f:
+            json.dump({"relations": inferred}, f, ensure_ascii=False, indent=2)
+        logger.info("推理关系已写入 %s", out_path)
 
         # 运行示例查询
         query_results = reasoner.run_sample_queries()

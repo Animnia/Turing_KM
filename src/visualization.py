@@ -126,6 +126,29 @@ def _load_graph_data() -> dict:
             "properties": rel.get("properties", {}),
         })
 
+    # 合并推理生成的关系（dashes=true）
+    inferred_path = DATA_PROCESSED_DIR / "inferred_triples.json"
+    if inferred_path.exists():
+        try:
+            with open(inferred_path, "r", encoding="utf-8") as f:
+                inferred_data = json.load(f)
+            entity_ids = set(data.get("entities", {}).keys())
+            inferred_count = 0
+            for rel in inferred_data.get("relations", []):
+                if rel["source"] in entity_ids and rel["target"] in entity_ids:
+                    props = dict(rel.get("properties", {}))
+                    props["inferred"] = True
+                    edges.append({
+                        "source": rel["source"],
+                        "relation": rel["relation"],
+                        "target": rel["target"],
+                        "properties": props,
+                    })
+                    inferred_count += 1
+            logger.info("合并推理关系: %d 条 (来自 %s)", inferred_count, inferred_path.name)
+        except Exception as e:
+            logger.warning("加载推理关系失败: %s", e)
+
     return {"nodes": nodes, "edges": edges}
 
 
