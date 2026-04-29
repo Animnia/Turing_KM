@@ -13,7 +13,7 @@ load_dotenv(ROOT_DIR / ".env")
 # DeepSeek API 配置
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY", "")
 DEEPSEEK_BASE_URL = os.getenv("DEEPSEEK_BASE_URL", "https://api.deepseek.com")
-DEEPSEEK_MODEL = "deepseek-chat"
+DEEPSEEK_MODEL = "deepseek-v4-pro"
 
 # Neo4j 配置
 NEO4J_URI = os.getenv("NEO4J_URI", "bolt://localhost:7687")
