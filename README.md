@@ -2,7 +2,7 @@
 
 > 2026 年知识工程个人作业
 
-基于**工程级知识图谱构建范式**，围绕计算机科学之父 **Alan Turing（艾伦·图灵）** 构建完整知识图谱。项目覆盖从数据采集、知识抽取、知识融合、图数据库存储、知识推理到交互式可视化的全流程，最终生成包含 **200 个实体** 和 **195 条关系** 的知识图谱。
+基于**工程级知识图谱构建范式**，围绕计算机科学之父 **Alan Turing（艾伦·图灵）** 构建完整知识图谱。项目覆盖从数据采集、知识抽取、知识融合、图数据库存储、知识推理到交互式可视化的全流程，最终生成包含 **221 个实体**、**202 条原始关系** 与 **11 条推理关系** 的知识图谱。
 
 ---
 
@@ -14,8 +14,8 @@
 | 运行时 | 语言 | **Python 3.13** | 利用最新语言特性 (type hints, match-case 等) |
 | 数据采集 | 结构化数据 | **Wikidata SPARQL API** | 通过 8 条 SPARQL 查询获取图灵相关结构化知识 |
 | 数据采集 | 非结构化数据 | **Wikipedia REST API** | 获取图灵词条的全部章节文本 |
-| 知识抽取 | LLM 抽取 | **DeepSeek API** (OpenAI 兼容) | 从非结构化文本中以 JSON 格式抽取实体和关系 |
-| 知识融合 | 实体对齐 | 自研融合算法 | 基于名称归一化的精确+子串匹配策略 |
+| 知识抽取 | LLM 抽取 | **DeepSeek API** (OpenAI 兼容) | 从非结构化文本中以 JSON 格式抽取实体和关系，输出后走 Schema 校验 + 黑名单过滤 |
+| 知识融合 | 实体对齐 | 自研融合算法 | 四级优先级：ID → QID → (归一名,类型) 精确 → SequenceMatcher 近似（0.88）|
 | 图存储 | 图数据库 | **Neo4j 5** (Docker) | 属性图模型，Cypher 查询语言 |
 | 知识推理 | 推理引擎 | **Cypher 推理规则** | 传递性推理 + 对称性推理 |
 | 可视化 | 前端渲染 | **Pyvis** (基于 vis-network.js) | 生成交互式 HTML 力导向图 |
@@ -30,6 +30,7 @@
 ```
 Turing_KM/
 ├── main.py                       # 主流程控制 (支持 --step 分步执行)
+├── scripts/test_e2e.py           # 端到端验证脚本 (22 项检查)
 ├── pyproject.toml                # 项目配置与依赖声明
 ├── .env                          # API Key 和数据库配置 (不提交到 Git)
 ├── .gitignore
@@ -78,16 +79,18 @@ Turing_KM/
 │    · Wikidata → 属性映射表 (21 个 PID → 关系类型)        │
 │      自动解析为 92 实体 + 97 关系                        │
 │    · Wikipedia → DeepSeek LLM 逐章抽取                   │
-│      Prompt 注入本体约束 → 153 实体 + 155 关系           │
-└────────────────────────┬─────────────────────────────────┘
+│      Prompt 注入本体约束 + Schema 校验 + 黑名单过滤    │
+│      → 153 实体 + 134 关系                                │
+└──────────────────────┬─────────────────────────────┘
                          ▼
-┌──────────────────────────────────────────────────────────┐
+┌─────────────────────────────────────────────────────────┐
 │  Phase 5: 知识融合 (Knowledge Fusion)                    │
 │    · 名称归一化 (去括号/标点/大小写统一)                  │
-│    · 实体对齐: 精确匹配 + 子串匹配 → 对齐 45 个实体      │
-│    · 日期标准化为 ISO 8601 格式                          │
+│    · 实体对齐四级优先级: ID → QID → 名+类型 → 近似·
+│      本轮对齐: ID 12 / 精确名 5 / 近似 1 / 新增 135        │
+│    · 日期标准化 + 嵌套属性展平 (Neo4j 原语型)         │
 │    · 质量检查: 类型覆盖率 + 孤立节点检测                  │
-│    · 输出: 200 实体 / 195 关系                           │
+│    · 输出: 221 实体 / 202 关系                           │
 └────────────────────────┬─────────────────────────────────┘
                          ▼
 ┌──────────────────────────────────────────────────────────┐
@@ -154,20 +157,27 @@ Turing_KM/
   - `_repair_truncated_json()` 函数修复 LLM 输出的残缺 JSON（补全缺失的括号/引号）
   - 异常章节自动跳过，不影响整体流程
 
-### 3. 知识融合 (`src/knowledge_fusion.py`)
+**Schema 校验与脱仓清洗（`_validate_extracted`）：**
+- 实体类型必须在本体 `ENTITY_TYPES` (8 种) 中；关系类型必须在 `RELATION_TYPES` (17 种) 中，否则丢弃
+- 名称黑名单正则：`wikipedia` / `wikiproject` / `category:` / `talk:` / `template:` / `disambiguation` 等 → 丢弃
+- 类型化黑名单：`(atheism, Institution)`、`(turing, Concept)` 等常见脱仓误抽丢弃
+- 参考完整性全面检查：丢弃引用了不存在实体的关系、自环关系
+- 同一黑名单在融合阶段对 Wikidata 与 LLM 双源实体都会再过一道，避免 Wikidata 原始数据中的维基元数据页被当作机构实体
 
-多源数据融合采用**以 Wikidata 为基准，LLM 抽取结果增量合并**的策略：
 
-**实体对齐算法：**
-1. **名称归一化**：`_normalize_name()` 统一转小写 → 去除括号内容 → 去标点 → 合并空白
-2. **ID 生成**：`_generate_entity_id()` 按 `{类型前缀}_{归一化名}` 生成确定性 ID
-3. **精确匹配**：归一化后名称完全一致的实体合并，Wikidata 属性优先
-4. **子串匹配**：处理缩写/全称不一致的情况 (如 "King's College" ⊂ "King's College, Cambridge")
-5. **属性融合**：对齐后取非空属性的并集
+**实体对齐算法（四级优先级，高 → 低）：**
+1. **ID 完全相同**：LLM Prompt 中固定的规范 ID（如 `person_alan_turing`）与 Wikidata 已有实体同 ID → 直接合并
+2. **`wikidata_id` (QID) 相同** → 合并，依靠全球唯一标识避免同名不同实体误合
+3. **(归一化名称, 实体类型)** 同时一致 → 合并；`_normalize_name()` 转小写、去括号、去标点、合并空白
+4. **同类型内 `difflib.SequenceMatcher` 近似度 ≥ 0.88** → 合并（处理缩写/多体变体）
+5. 均未命中 → 作为新实体加入；**已移除原有过于宽松的子串匹配**以避免 Place vs Person 之类的跨类型误合
+
+对齐后取非空属性的并集，不覆盖已有高质量字段。
 
 **清洗与质量保障：**
 - 日期标准化：所有日期转换为 ISO 8601 (`YYYY-MM-DD`)
-- 类型验证：检查实体类型和关系类型是否在本体定义范围内
+- **嵌套属性展平** (`_flatten_for_neo4j`)：LLM 可能输出嵌套的 `properties: {...}` 字典；在清洗阶段将其提升到顶层并过滤为 Neo4j 只支持的原语类型（string/int/float/bool 及其数组），以免导入时报 `CypherTypeError`
+- 类型验证：实体/关系类型必须在本体定义范围内
 - 孤立节点检测：标记无任何边连接的节点
 - 统计报告：输出各类型实体/关系的分布统计
 
@@ -205,6 +215,7 @@ Turing_KM/
 
 - 推理关系使用 `{inferred: true}` 属性标记，可视化中以虚线区分
 - 使用 `MERGE` 语义避免重复推理
+- **推理结果双路持久化**：推理完成后调用 `export_inferred_relations()` 将所有 `inferred=true` 边导出到 `data/processed/inferred_triples.json`；可视化在 Neo4j 不可用时从该文件加载，仍能在 HTML 中渲染虚线推理边
 
 **示例查询（5 条）：**
 - 最短路径查询：图灵 ↔ 任意实体间的最短关系链
@@ -332,6 +343,14 @@ uv run python main.py --step reasoning     # Phase 7: 知识推理 (需 Docker)
 uv run python main.py --step visualize     # Phase 8: 可视化
 ```
 
+### 端到端验证
+
+全流程跑完后可运行附带的验证脚本，对 22 项指标（文件/黑名单/对齐/Neo4j/示例查询/HTML）进行端到端检查：
+
+```bash
+uv run python scripts/test_e2e.py
+```
+
 每个阶段的输出 JSON 保存在 `data/` 目录下，后续阶段自动读取前一阶段的输出。即使跳过 Neo4j 相关步骤，可视化也能直接从 `data/processed/final_triples.json` 加载数据。
 
 ### .env 配置示例
@@ -339,9 +358,9 @@ uv run python main.py --step visualize     # Phase 8: 可视化
 ```env
 DEEPSEEK_API_KEY=sk-xxxxxxxxxxxxxxxx
 DEEPSEEK_BASE_URL=https://api.deepseek.com
-NEO4J_URI=bolt://localhost:7687
+NEO4J_URI=neo4j://127.0.0.1:7687
 NEO4J_USER=neo4j
-NEO4J_PASSWORD=turing2026
+NEO4J_PASSWORD=your_neo4j_password
 ```
 
 ---
@@ -368,6 +387,7 @@ NEO4J_PASSWORD=turing2026
 | `data/raw/wikipedia_turing.json` | Wikipedia 章节文本 |
 | `data/processed/wikidata_triples.json` | Wikidata 解析后的实体-关系三元组 |
 | `data/processed/extracted_triples.json` | DeepSeek LLM 抽取的实体-关系三元组 |
-| `data/processed/final_triples.json` | 融合后的最终知识图谱数据 (200 实体 / 195 关系) |
+| `data/processed/final_triples.json` | 融合后的最终知识图谱数据 (221 实体 / 202 关系) |
+| `data/processed/inferred_triples.json` | 导出的推理关系 (`inferred=true`)，供可视化虚线渲染 |
 | `output/turing_kg.html` | 交互式可视化 HTML (可直接用浏览器打开) |
 | `pipeline.log` | 完整流水线执行日志 |
